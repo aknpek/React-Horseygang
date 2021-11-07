@@ -2,14 +2,17 @@ import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
 import { IContent, IHeader, IRarity } from "../../types";
 import React, { useEffect, useRef, useState } from "react";
 
-import FifthContainer from "./FifthContainer";
+import FifthContainer from "./RarityContainer";
 import Header from "../../components/Header";
-import SecondContainer from "./SecondContainer";
+import SecondContainer from "./EnterenceDescription";
 import SeventhContainer from "./SeventhContainer";
-import ThirdContainer from "./ThirdContainer";
+import ThirdContainer from "./Collections";
+import TeamsContainer from "./TeamsContainer";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RoadMap from "../../components/RoadMap";
+import { EnterenceContainer } from "./EnterenceContainer";
+
 
 const getDocHeight = () => {
   return Math.max(
@@ -92,6 +95,10 @@ const Landing: React.FC = () => {
           />
         </FirstContainer>
 
+        <div className={"EnterenceContainer"}>
+          <EnterenceContainer />
+        </div>
+
         <div className={"Home-Container"}>
           <div>
             <SecondContainer
@@ -132,11 +139,10 @@ const Landing: React.FC = () => {
           />
         </div>
 
-        <div ref={refTeam} className={"Team-Container"}>
-          <SeventhContainer
-            data={data["landing"]["containers"][6]}
-          ></SeventhContainer>
-        </div>
+        <div className={"TeamsContainer"}>
+        <TeamsContainer data={data["landing"]["containers"][6]} />
+      </div>
+
       </FirstWrapper>
     </GeneralWrapper>
   );

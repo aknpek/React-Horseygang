@@ -30,7 +30,10 @@ const Pictures: any= {
   door: require("../data/jpg/door.jpg"),
   background: require("../data/jpg/background.jpg"),
 
-  cozyland: require('../data/png/cozyland.png')
+  cozyland: require('../data/png/cozyland.png'),
+
+  enterence_gif: require("../data/gif/mainpage.gif"),
+
 };
 
 export default Pictures;
