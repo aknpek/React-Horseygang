@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { IContainer } from "../../types";
 import Picture from "../../components/Picture";
 import TextDisplay from "../../components/TextDisplay";
-import YildizContainer from "../../components/Yildizlar";
 
 interface ISecondComponent {
   textDireciton: Boolean;
@@ -51,23 +50,14 @@ export const SecondComponent = styled.div<ISecondComponent>`
     grid-column-end: ${(props) => (props.textDireciton ? 5 : 3)};
     z-index: 1;
   }
-  .yildizDiv {
-    position: absolute;
-    z-index: 0;
-  }
+
   @media screen and (max-width: 1700px) {
     max-width: 1700px;
     height: 600px;
-    .yildizDiv {
-      width: 1700px;
-    }
   }
   @media screen and (max-width: 1500px) {
     max-width: 1500px;
     height: 550px;
-    .yildizDiv {
-      width: 1500px;
-    }
   }
   @media screen and (max-width: 1300px) {
     max-width: 1300px;
@@ -80,9 +70,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
       `}
 
     height: 550px;
-    .yildizDiv {
-      width: 1300px;
-    }
   }
   @media screen and (max-width: 1000px) {
     height: 950px;
@@ -114,10 +101,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
       grid-column-start: 2;
       grid-column-end: 3;
       z-index: 1;
-
-      .yildizDiv {
-        width: 800px;
-      }
     }
   }
 
@@ -142,10 +125,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
       grid-column-start: 2;
       grid-column-end: 3;
       z-index: 1;
-
-      .yildizDiv {
-        width: 800px;
-      }
     }
   }
   @media screen and (max-width: 500px) {
@@ -193,10 +172,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
       grid-column-start: 2;
       grid-column-end: 3;
       z-index: 1;
-
-      .yildizDiv {
-        width: 650px;
-      }
     }
   }
   @media screen and (max-width: 400px) {
@@ -276,13 +251,8 @@ const SecondContainer: React.FC<PropsSecond> = (props) => {
       preSale={props.preSale}
       metaHomes={props.metaHomes}
     >
-        <Picture picture={props.data["pictures"]} />
+      <Picture picture={props.data["pictures"]} />
       <TextDisplay textDirection={props.textDirection} {...props.data} />
-      <div className={"starDiv"}>
-        <div className={"startSubDiv2"}>
-          <YildizContainer />
-        </div>
-      </div>
     </SecondComponent>
   );
 };

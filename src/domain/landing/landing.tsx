@@ -2,21 +2,13 @@ import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
 import { IContent, IHeader, IRarity } from "../../types";
 import React, { useEffect, useRef, useState } from "react";
 
-import { AttributesContainer } from "./Attributes";
-import BackGroundContainer from "../../components/BackgroundFirst";
-import BackGroundContainerSecond from "../../components/BackgroundSecond";
-import CozyLand from "./CozyLand";
 import FifthContainer from "./FifthContainer";
-import FourthContainer from "./FourthContainer";
-import { HardCodeBulut } from "./HardCodeBulut";
 import Header from "../../components/Header";
-import Progress from "../../components/ProgressBar";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import SecondContainer from "./SecondContainer";
 import SeventhContainer from "./SeventhContainer";
 import ThirdContainer from "./ThirdContainer";
-import gsap from "gsap";
-
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const getDocHeight = () => {
   return Math.max(
@@ -31,13 +23,11 @@ const getDocHeight = () => {
 
 const Landing: React.FC = () => {
   const data: IContent = require("../../data/json/text.json");
-  const rarity: IRarity = require("../../data/json/rarity.json");
 
   const header_data: IHeader = data["landing"]["header"];
   const scrollPosition = useRef<Number>(0);
   const [showThirdContainer, setShowThirdContainer] = useState<Boolean>(true);
 
-  let refSecCozyLand = useRef<HTMLDivElement>(null);
   let refAttributes = useRef<HTMLDivElement>(null);
   let refTeam = useRef<HTMLDivElement>(null);
   let refHeader = useRef<HTMLDivElement>(null);
@@ -45,7 +35,7 @@ const Landing: React.FC = () => {
 
   useEffect(() => {
     if (renderEffects.current === 0) {
-      console.log(renderEffects)
+      console.log(renderEffects);
       gsap.registerPlugin(ScrollTrigger);
       gsap.from(refHeader.current!, {
         y: -50,
@@ -92,40 +82,17 @@ const Landing: React.FC = () => {
 
   return (
     <GeneralWrapper>
-      <div className={"progressDiv"}>
-        <Progress scroll={scrollPosition + "%"} />
-      </div>
       <FirstWrapper>
-        {/* <div ref={refHeader}> */}
-          <FirstContainer >
-            <Header
-              {...header_data}
-              showThirdContainer={showThirdContainer}
-              scrollPosition={scrollPosition.current}
-            />
-          </FirstContainer>
-        {/* </div> */}
-
-        <HardCodeBulut />
-
-        <div className={"firstBackGround"}>
-          <BackGroundContainer />
-        </div>
-
-        <div className={"secondBackGround"}>
-          <BackGroundContainerSecond />
-        </div>
-
-        <div className={"firstBackGround2"}>
-          <BackGroundContainer />
-        </div>
-
-        <div className={"secondBackGround2"}>
-          <BackGroundContainerSecond />
-        </div>
+        <FirstContainer>
+          <Header
+            {...header_data}
+            showThirdContainer={showThirdContainer}
+            scrollPosition={scrollPosition.current}
+          />
+        </FirstContainer>
 
         <div className={"Home-Container"}>
-          <div >
+          <div>
             <SecondContainer
               data={data["landing"]["containers"][0]}
               textDirection={true}
@@ -133,7 +100,7 @@ const Landing: React.FC = () => {
               metaHomes={false}
             />
           </div>
-          <div >
+          <div>
             <SecondContainer
               data={data["landing"]["containers"][1]}
               textDirection={false}
@@ -141,10 +108,6 @@ const Landing: React.FC = () => {
               metaHomes={true}
             />
           </div>
-        </div>
-
-        <div ref={refSecCozyLand} className={"CozyLand-Container"}>
-          <CozyLand data={data["landing"]["containers"][8]} />
         </div>
 
         <ThirdContainer
@@ -157,9 +120,6 @@ const Landing: React.FC = () => {
           data={data["landing"]["containers"][4]}
         ></FifthContainer>
 
-        <FourthContainer
-          data={data["landing"]["containers"][3]}
-        ></FourthContainer>
 
         <div className={"Presale-Container"}>
           <SecondContainer
@@ -168,13 +128,6 @@ const Landing: React.FC = () => {
             preSale={true}
             metaHomes={false}
           />
-        </div>
-
-        <div ref={refAttributes}>
-          <AttributesContainer
-            elements={rarity["elements"]}
-            data={data["landing"]["containers"][7]}
-          ></AttributesContainer>
         </div>
 
         <div ref={refTeam} className={"Team-Container"}>

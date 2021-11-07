@@ -1,11 +1,9 @@
 import { IContainer, IFifthContainer, IPictures } from "../../types";
 import { useEffect, useRef } from "react";
 
-import BackGroundFirst from "../../svgs/BackGroundFirst";
-import BackGroundSecond from "../../svgs/BackGroundSecond";
 import Pictures from "../../components/Locals";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import gsap from "gsap";
+import gsap  from "gsap";
 import styled from "styled-components";
 
 const FifthComponent = styled.div<IFifthContainer>`
@@ -322,10 +320,6 @@ const FifthContainer: React.FC<PropsFifth> = (props) => {
         {props.data["pictures"].map((value: IPictures) => (
           <RarirtyImages {...value} key={`${value.id}`} />
         ))}
-      </div>
-
-      <div className={"backGroundFirst"}>
-        <BackGroundFirst props={{}} />
       </div>
 
     </FifthComponent>

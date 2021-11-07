@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 import CozyLogo from "../svgs/CozyLogo";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import gsap from "gsap";
+import { gsap} from "gsap";
 import { scrollToSection } from "../components/Header";
 import styled from "styled-components";
 

@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 
 import Pictures from "../../components/Locals";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import YildizContainer from "../../components/Yildizlar";
 import gsap from "gsap";
 import styled from "styled-components";
 import { useEffect } from "react";
@@ -350,19 +349,7 @@ const SeventhComponent = styled.div<ISixthContainer>`
     }
   }
 
-  .starDiv {
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    z-index: 2;
-
-    .startSubDiv {
-      margin-left: 25%;
-    }
-    .startSubDiv2 {
-      margin-top: 25%;
-    }
-  }
+ 
 `;
 interface PropsSeven {
   data: IContainer;
@@ -428,14 +415,6 @@ const SeventhContainer: React.FC<PropsSeven> = (props) => {
         </a>
       </div>
 
-      <div key={"starDiv"} className={"starDiv"}>
-        <div key={"starSubDiv"} className={"starSubDiv"}>
-          <YildizContainer key={"starContainer1"} />
-        </div>
-        <div key={"starSubDiv2"} className={"startSubDiv2"}>
-          <YildizContainer key={"starContainer2"} />
-        </div>
-      </div>
     </SeventhComponent>
   );
 };
