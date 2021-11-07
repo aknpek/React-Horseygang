@@ -1,5 +1,5 @@
 import { IHeader, IMenu } from "../types";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { injected } from "./Wallet";
 
 
@@ -248,7 +248,7 @@ const HeaderCo = styled.div<IHead>`
           font-weight: 800;
           margin: 1rem;
           color: ${(props) =>
-            props.showThirdContainer ? "#0f0f0f" : "#0f0f0f"};
+    props.showThirdContainer ? "#0f0f0f" : "#0f0f0f"};
           transition: color 0.2s ease-in-out;
           text-align: center;
           justify-content: center;
@@ -347,7 +347,7 @@ const HeaderCo = styled.div<IHead>`
           font-weight: 800;
           margin: 1rem;
           color: ${(props) =>
-            props.showThirdContainer ? "#0f0f0f" : "#0f0f0f"};
+    props.showThirdContainer ? "#0f0f0f" : "#0f0f0f"};
           transition: color 0.2s ease-in-out;
           text-align: center;
           justify-content: center;
@@ -499,7 +499,7 @@ const Header: React.FC<IHeaderExtension> = (props) => {
   const [tryWallet, setTryWallet] = useState<Boolean>(false);
 
   const { active, account, library, connector, activate, deactivate } =
-  useWeb3React();
+    useWeb3React();
 
   useEffect(() => {
     if (!tryWallet && active) {
@@ -528,7 +528,7 @@ const Header: React.FC<IHeaderExtension> = (props) => {
         });
     }
   };
-  useEffect(() => {}, [props.showThirdContainer]);
+  useEffect(() => { }, [props.showThirdContainer]);
   useEffect(() => {
     fetchBalance();
   }, [account]);
@@ -573,35 +573,35 @@ const Header: React.FC<IHeaderExtension> = (props) => {
                             <h1 key={"div" + value.id + "b"}>Wallet</h1>
                             <div
                               className={"dropDownContent"}
-                              key={"wlc" + value.id  + "c"}
+                              key={"wlc" + value.id + "c"}
                             >
-                              <h1 key={"wls" + value.id  + "d"}>
+                              <h1 key={"wls" + value.id + "d"}>
                                 wallet id:{" "}
                                 {account === null
                                   ? "-"
                                   : account
-                                  ? `${account.substring(
+                                    ? `${account.substring(
                                       0,
                                       6
                                     )}...${account.substring(
                                       account.length - 4
                                     )}`
-                                  : ""}
+                                    : ""}
                               </h1>
-                              <h1 key={"div" + value.id  + "e"}>
+                              <h1 key={"div" + value.id + "e"}>
                                 balance:{" "}
                                 {balanceAccount === null
                                   ? "-"
                                   : balanceAccount
-                                  ? `${balanceAccount.substring(
+                                    ? `${balanceAccount.substring(
                                       0,
                                       6
                                     )}...${balanceAccount.substring(
                                       balanceAccount.length - 4
                                     )}`
-                                  : ""}
+                                    : ""}
                               </h1>
-                              <h1 onClick={disconnect} key={"h1" + value.id  + "f"}>
+                              <h1 onClick={disconnect} key={"h1" + value.id + "f"}>
                                 disconnect
                               </h1>
                             </div>

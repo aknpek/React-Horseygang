@@ -9,6 +9,7 @@ import SeventhContainer from "./SeventhContainer";
 import ThirdContainer from "./ThirdContainer";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import RoadMap from "../../components/RoadMap";
 
 const getDocHeight = () => {
   return Math.max(
@@ -119,8 +120,9 @@ const Landing: React.FC = () => {
           showFifthContainer={showThirdContainer}
           data={data["landing"]["containers"][4]}
         ></FifthContainer>
-
-
+        <div>
+          <RoadMap />
+        </div>
         <div className={"Presale-Container"}>
           <SecondContainer
             data={data["landing"]["containers"][5]}
