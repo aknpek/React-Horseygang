@@ -1,0 +1,332 @@
+{
+  "landing": {
+    "header": {
+      "menu": [
+        {
+          "id": 0,
+          "title": "home",
+          "scroll": "Home-Container"
+        },
+        {
+          "id": 1,
+          "title": "about",
+          "scroll": "Fifth-Component"
+        },
+        {
+          "id": 2,
+          "title": "roadmap",
+          "scroll": "Fourth-Component"
+        },
+        {
+          "id": 3,
+          "title": "team",
+          "scroll": "Team-Container"
+        },
+        {
+          "id": 4,
+          "title": "connect wallet",
+          "scroll": ""
+        }
+      ],
+      "logo": { "description": "", "url": "" },
+      "title": "CozyHome"
+    },
+    "containers": [
+      {
+        "component-place": "container-second",
+        "component-type": "promotion",
+        "title": "",
+        "subtitle": "SOON!",
+        "slogan": [
+          {
+            "id": 0,
+            "slogan": "Every homeowner gets access to the private land of Ethereum with Cozy Homes. We are going to start the construction!"
+          },
+          {
+            "id": 1,
+            "slogan": "The fantastic realm is a piece of land on the Ethereum Blockchain network that only those who know the secret shall have access to!"
+          },
+          {
+            "id": 2,
+            "slogan": "And the unique cozy homes in this mythical fantastic land are only limited to 7999 in quantity and the deeds will be sold for *** ETH."
+          }
+        ],
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "gif",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "Home's GIF"
+          }
+        ]
+      },
+      {
+        "component-place": "container-third",
+        "component-type": "collection",
+        "title": "MetaHomes",
+        "subtitle": "",
+        "slogan": [
+          { "id": 0, "slogan": "Why you should buy a Cozy Home?" },
+          {
+            "id": 1,
+            "slogan": "- Own a real part of our Cozy Neighborhood and be part of the Cozy Community!"
+          },
+          {
+            "id": 2,
+            "slogan": "- Generate revenue on your investment by managing a Bed and Breakfast!"
+          },
+          {
+            "id": 3,
+            "slogan": "- Mint a Cozy Home to receive 1% revenue on all of its secondary sales!"
+          },
+          {
+            "id": 4,
+            "slogan": "- Link your Cozy Homes throughout the Metaverse to appear in virtual spaces (i.e. Decentraland, or VR Reality Spaces)!"
+          },
+          {
+            "id": 5,
+            "slogan": "- Get surprise gifts for special events like new year, Halloween for your Cozy Home!"
+          }
+        ],
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "cadi",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "component-place": "container-fourth",
+        "component-type": "banner",
+        "title": "",
+        "subtitle": "",
+        "slogan": "Home Is Home",
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "ufo",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 1,
+            "picture_url": "ktp",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 2,
+            "picture_url": "sade",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 3,
+            "picture_url": "ejderha",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 4,
+            "picture_url": "dondurma",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 5,
+            "picture_url": "sade2",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "component-place": "container-fourth",
+        "component-type": "roadmap",
+        "title": "Roadmap",
+        "subtitle": "Home is Home!",
+        "slogan": "Our main goal is to buy a land in the Metaverse and and allocate this land to the deed owners of Cozy Homes via smart contracts and provide the market liberalisation. This will lead Cozy Home owners to have even more revenue from their investements than the investments in any other projects. Our future plans include brand development, rarity tools contribution, giveaways and other gifts for deed owners.",
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "yarasa",
+            "title": "0",
+            "subtitle": "Build Home. Welcome to Land of Legends!",
+            "hyperlink": "",
+            "description": "10 cozy home giweaway, *** eth gift for 10 people."
+          },
+          {
+            "id": 1,
+            "picture_url": "yarasa",
+            "title": "25",
+            "subtitle": "The Community Wallet is opened.",
+            "hyperlink": "",
+            "description": "10 cozy home giveaway, *** eth gift for 5 people"
+          },
+          {
+            "id": 2,
+            "picture_url": "yarasa",
+            "title": "50",
+            "subtitle": "Giveaway Program Lunch with Type-II",
+            "hyperlink": "",
+            "description": "10 cozy home giveaway, *** eth gift for 10 people"
+          },
+          {
+            "id": 3,
+            "picture_url": "yarasa",
+            "title": "75",
+            "subtitle": "Special home follow up will be released as Type-II",
+            "hyperlink": "",
+            "description": "10 cozy home giveaway, *** eth gift for 10 people"
+          },
+          {
+            "id": 4,
+            "picture_url": "yarasa",
+            "title": "100",
+            "subtitle": "New NFT Type-III",
+            "hyperlink": "",
+            "description": "Buying lands for deed owners in the Metaverse! *** eth gift for 3 people"
+          }
+        ]
+      },
+      {
+        "component-place": "container-fifth",
+        "component-type": "banner",
+        "title": "Rarity",
+        "subtitle": "",
+        "slogan": "Each Cozy Home design feature is assigned randomly to every artwork for you! All Cozy Home is a unique entity. Nevertheless, some of them which we scattered among, are even more unique than others! To buy more Cozy Home deeds means a higher chance for your successful investment!",
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "lgbt",
+            "title": "Unique",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 1,
+            "picture_url": "rare",
+            "title": "Unique",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          },
+          {
+            "id": 2,
+            "picture_url": "uncom",
+            "title": "Unique",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "component-place": "container-second",
+        "component-type": "banner",
+        "title": "Presale",
+        "subtitle": "Soon!",
+        "slogan": [
+          { "id": 0, "slogan": "*** ETH" },
+          { "id": 1, "slogan": "*** Left" }
+        ],
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "presale",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "component-place": "container-seventh",
+        "component-type": "banner",
+        "title": "Team",
+        "subtitle": "",
+        "slogan": "",
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "egemen",
+            "title": "Egemen",
+            "subtitle": "Project Manager",
+            "hyperlink": "https://twitter.com/DropNFTArt",
+            "description": ""
+          },
+          {
+            "id": 1,
+            "picture_url": "elif",
+            "title": "Elif",
+            "subtitle": "Designer",
+            "hyperlink": "https://twitter.com/DesignofNFT",
+            "description": ""
+          },
+          {
+            "id": 2,
+            "picture_url": "akin",
+            "title": "Akın",
+            "subtitle": "Developer",
+            "hyperlink": "https://twitter.com/nftsell",
+            "description": ""
+          },
+          {
+            "id": 3,
+            "picture_url": "burak",
+            "title": "Burak",
+            "subtitle": "Social Media",
+            "hyperlink": "https://twitter.com/BaldPromotion",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "component-place": "container-attributes",
+        "component-type": "banner",
+        "title": "Attributes",
+        "subtitle": "Cozy Home designs consist of 7 different attributes. Each attribute has a different number of designed features with varying rarity scores. Hover on each attribute to see how many different features exist!",
+        "slogan": "",
+        "pictures": []
+      },
+      {
+        "component-place": "container-cozyland",
+        "component-type": "banner",
+        "title": "CozyLand",
+        "subtitle": "CozyLand where you can find your neighbors and check where your Cozy Home is located! Check out now your neighbors and your neighborhood!",
+        "slogan": "COZYLAND SOON!",
+        "pictures": [
+          {
+            "id": 0,
+            "picture_url": "cozyland",
+            "title": "CozyLand",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": ""
+          }
+        ]
+      }
+
+    ]
+  }
+}

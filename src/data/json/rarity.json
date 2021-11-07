@@ -1,0 +1,47 @@
+{
+  "elements": [
+    {
+      "title": "wall",
+      "quantity": 10,
+      "color": "#F2C94C",
+      "id": 0
+    },
+
+    {
+      "title": "roof",
+      "quantity": 43,
+      "color": "#B2489B",
+      "id": 1
+    },
+    {
+      "title": "windows",
+      "quantity": 42,
+      "color": "#8BC343",
+      "id": 2
+    },
+    {
+      "title": "door",
+      "quantity": 40,
+      "color": "#FF961B",
+      "id": 3
+    },
+    {
+      "title": "accessory",
+      "quantity": 28,
+      "color": "#B5B3DA",
+      "id": 4
+    },
+    {
+      "title": "sky",
+      "quantity": 22,
+      "color": "#F7A5B5",
+      "id": 5
+    },
+    {
+      "title": "background",
+      "quantity": 18,
+      "color": "#4FC4CA",
+      "id": 6
+    }
+  ]
+}
