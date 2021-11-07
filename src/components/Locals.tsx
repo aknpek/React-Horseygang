@@ -1,4 +1,4 @@
-const Pictures: any= {
+const Pictures: any = {
   yarasa: require("../data/png/yarasa.png"),
 
   cadi: require("../data/png/cadi.png"),
@@ -9,15 +9,15 @@ const Pictures: any= {
   sade2: require("../data/png/sade2.png"),
   ejderha: require("../data/png/ejderha.png"),
 
-  
-  lgbt:  require("../data/png/lgbt.png"),
+
+  lgbt: require("../data/png/lgbt.png"),
   rare: require("../data/png/rare.png"),
   uncom: require("../data/png/uncom.png"),
 
   presale: require("../data/png/presale.png"),
 
   elif: require("../data/png/elif.png"),
-  egemen:  require("../data/png/egemen.png"),
+  egemen: require("../data/png/egemen.png"),
   akin: require("../data/png/akin.png"),
   burak: require("../data/png/burak.png"),
   gif: require("../data/png/logo.gif"),
@@ -33,7 +33,7 @@ const Pictures: any= {
   cozyland: require('../data/png/cozyland.png'),
 
   enterence_gif: require("../data/gif/mainpage.gif"),
-
+  loadingGif: require("../data/gif/loadingGif.gif"),
 };
 
 export default Pictures;

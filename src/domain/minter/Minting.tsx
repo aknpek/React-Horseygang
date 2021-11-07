@@ -7,11 +7,12 @@ const MinterContainer = styled.div`
     width: 200px;
 `;
 
-export const Minting: React.FC = () => {
+const Minting: React.FC = () => {
     return (
         <MinterContainer>
             <h1>Amk</h1>
         </MinterContainer>
     )
 }
+export default Minting
 

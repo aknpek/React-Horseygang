@@ -26,11 +26,10 @@ export const EnterenceContainer: React.FC = (props) => {
       opacity: 0.5,
       y: -100,
       scale: 0.4,
-      duration: 1,
+      duration: 2,
       scrollTrigger: ref.current!,
     });
   });
-
   return (
     <EnterenceComponent ref={ref}>
       <img src={Pictures["enterence_gif"].default} />

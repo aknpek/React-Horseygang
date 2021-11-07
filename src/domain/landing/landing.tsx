@@ -77,6 +77,7 @@ const Landing: React.FC = () => {
       calculateScrollPercentage();
     });
   };
+
   useEffect(() => {
     document.addEventListener("scroll", scrollDistance);
     return () => {
@@ -140,8 +141,8 @@ const Landing: React.FC = () => {
         </div>
 
         <div className={"TeamsContainer"}>
-        <TeamsContainer data={data["landing"]["containers"][6]} />
-      </div>
+          <TeamsContainer data={data["landing"]["containers"][6]} />
+        </div>
 
       </FirstWrapper>
     </GeneralWrapper>
