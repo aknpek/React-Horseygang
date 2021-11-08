@@ -7,7 +7,16 @@ import Waiting from "../components/Waiting";
 function getLibrary(provider: any) {
   return new Web3(provider);
 }
-const Landing = lazy(() => import('../domain/landing/landing'));
+
+const Landing = lazy(() => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Amk Akin");
+    }, 1000);
+  }).then(() => import("../domain/landing/landing"));
+});
+
+// const Landing = lazy(() => import('../domain/landing/landing'));
 function App() {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
