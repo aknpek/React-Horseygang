@@ -12,7 +12,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RoadMap from "../../components/RoadMap";
 import { EnterenceContainer } from "./EnterenceContainer";
-
+import Leaf from "../../components/Leaf";
 
 const getDocHeight = () => {
   return Math.max(
@@ -95,6 +95,10 @@ const Landing: React.FC = () => {
           />
         </FirstContainer>
 
+        <div>
+          <Leaf />
+        </div>
+
         <div className={"EnterenceContainer"}>
           <EnterenceContainer />
         </div>
@@ -140,9 +144,8 @@ const Landing: React.FC = () => {
         </div>
 
         <div className={"TeamsContainer"}>
-        <TeamsContainer data={data["landing"]["containers"][6]} />
-      </div>
-
+          <TeamsContainer data={data["landing"]["containers"][6]} />
+        </div>
       </FirstWrapper>
     </GeneralWrapper>
   );

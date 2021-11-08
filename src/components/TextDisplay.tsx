@@ -1,7 +1,7 @@
 import { ISlogan, IContainer as Props } from "../types";
 import React, { useEffect, useRef } from "react";
 
-import CozyLogo from "../svgs/CozyLogo";
+// import CozyLogo from "../svgs/CozyLogo";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { gsap} from "gsap";
 import { scrollToSection } from "../components/Header";
@@ -794,7 +794,7 @@ const TextDisplay: React.FC<PTextDisplay> = (props) => {
         ) : (
           <div ref={refHeader} className={"cozyHomeLogoDiv"}>
             <div className={"cozyHomeLogoDiv2"}>
-              <CozyLogo props={{}} />
+              {/* <CozyLogo props={{}} /> */}
             </div>
           </div>
         )}
