@@ -12,8 +12,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RoadMap from "../../components/RoadMap";
 import { EnterenceContainer } from "./EnterenceContainer";
-import { LoadingContext } from "react-router-loading";
-
+import Leaf from "../../components/Leaf";
 
 const getDocHeight = () => {
   return Math.max(
@@ -46,7 +45,6 @@ const Landing: React.FC = () => {
 
   useEffect(() => {
     if (renderEffects.current === 0) {
-      console.log(renderEffects);
       gsap.registerPlugin(ScrollTrigger);
       gsap.from(refHeader.current!, {
         y: -50,
@@ -103,6 +101,10 @@ const Landing: React.FC = () => {
           />
         </FirstContainer>
 
+        <div>
+          <Leaf />
+        </div>
+
         <div className={"EnterenceContainer"}>
           <EnterenceContainer />
         </div>
@@ -135,9 +137,12 @@ const Landing: React.FC = () => {
           showFifthContainer={showThirdContainer}
           data={data["landing"]["containers"][4]}
         ></FifthContainer>
+
         <div>
-          <RoadMap />
+          <RoadMap data={data["landing"]["containers"][9]} />
         </div>
+
+
         <div className={"Presale-Container"}>
           <SecondContainer
             data={data["landing"]["containers"][5]}
@@ -150,7 +155,6 @@ const Landing: React.FC = () => {
         <div className={"TeamsContainer"}>
           <TeamsContainer data={data["landing"]["containers"][6]} />
         </div>
-
       </FirstWrapper>
     </GeneralWrapper>
   );
