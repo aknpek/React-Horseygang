@@ -1,32 +1,26 @@
 import "./App.css";
 import Web3 from "web3";
 import { Web3ReactProvider } from "@web3-react/core";
-import { Route, Switch } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import Landing from "../domain/landing/landing";
 import Waiting from "../components/Waiting";
+import { Route, Switch } from "react-router";
+import { AnimatePresence } from "framer-motion";
 function getLibrary(provider: any) {
   return new Web3(provider);
 }
-
-const Landing = lazy(() => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Amk Akin");
-    }, 1000);
-  }).then(() => import("../domain/landing/landing"));
-});
-
 // const Landing = lazy(() => import('../domain/landing/landing'));
 function App() {
+
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
-      <Suspense fallback={<Waiting />}>
+      <AnimatePresence exitBeforeEnter>
         <div className="MainApp">
           <Switch>
-            <Route path="/" component={Landing} exact />
+            <Route path="/" component={Waiting} exact />
+            <Route path="/enter" component={Landing} />
           </Switch>
         </div>
-      </Suspense>
+      </AnimatePresence>
     </Web3ReactProvider>
   );
 }

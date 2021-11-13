@@ -1,6 +1,6 @@
 import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
 import { IContent, IHeader, IRarity } from "../../types";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 import FifthContainer from "./RarityContainer";
 import Header from "../../components/Header";
@@ -12,6 +12,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RoadMap from "../../components/RoadMap";
 import { EnterenceContainer } from "./EnterenceContainer";
+import { LoadingContext } from "react-router-loading";
 
 
 const getDocHeight = () => {
@@ -26,6 +27,12 @@ const getDocHeight = () => {
 };
 
 const Landing: React.FC = () => {
+  const loadingContext = useContext(LoadingContext);
+  const loading = async () => {
+    setTimeout(() => {
+      loadingContext.done();
+    }, 3000)
+  };
   const data: IContent = require("../../data/json/text.json");
 
   const header_data: IHeader = data["landing"]["header"];
@@ -86,7 +93,7 @@ const Landing: React.FC = () => {
   });
 
   return (
-    <GeneralWrapper>
+    <GeneralWrapper onLoad={() => loading()}>
       <FirstWrapper>
         <FirstContainer>
           <Header
