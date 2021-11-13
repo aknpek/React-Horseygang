@@ -1,6 +1,6 @@
 import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
 import { IContent, IHeader, IRarity } from "../../types";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 import FifthContainer from "./RarityContainer";
 import Header from "../../components/Header";
@@ -26,6 +26,12 @@ const getDocHeight = () => {
 };
 
 const Landing: React.FC = () => {
+  const loadingContext = useContext(LoadingContext);
+  const loading = async () => {
+    setTimeout(() => {
+      loadingContext.done();
+    }, 3000)
+  };
   const data: IContent = require("../../data/json/text.json");
 
   const header_data: IHeader = data["landing"]["header"];
@@ -85,7 +91,7 @@ const Landing: React.FC = () => {
   });
 
   return (
-    <GeneralWrapper>
+    <GeneralWrapper onLoad={() => loading()}>
       <FirstWrapper>
         <FirstContainer>
           <Header
