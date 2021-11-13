@@ -19,6 +19,7 @@ export interface IPictures {
   subtitle: string;
   hyperlink: string;
   description: string;
+  content?: string[];
 }
 
 export interface IMenu {

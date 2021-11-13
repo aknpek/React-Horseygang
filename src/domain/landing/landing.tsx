@@ -39,7 +39,6 @@ const Landing: React.FC = () => {
 
   useEffect(() => {
     if (renderEffects.current === 0) {
-      console.log(renderEffects);
       gsap.registerPlugin(ScrollTrigger);
       gsap.from(refHeader.current!, {
         y: -50,
@@ -132,9 +131,12 @@ const Landing: React.FC = () => {
           showFifthContainer={showThirdContainer}
           data={data["landing"]["containers"][4]}
         ></FifthContainer>
+
         <div>
-          <RoadMap />
+          <RoadMap data={data["landing"]["containers"][9]} />
         </div>
+
+
         <div className={"Presale-Container"}>
           <SecondContainer
             data={data["landing"]["containers"][5]}

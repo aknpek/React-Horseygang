@@ -325,6 +325,87 @@
             "description": ""
           }
         ]
+      },
+      {
+        "component-place": "container-roadmap",
+        "component-type": "banner",
+        "title": "CozyLand",
+        "subtitle": "CozyLand where you can find your neighbors and check where your Cozy Home is located! Check out now your neighbors and your neighborhood!",
+        "slogan": [
+          { "id": 0, "slogan": "Why you should buy a Cozy Home?" },
+          { "id": 1, "slogan": "Why you should buy a Cozy Home?" }
+
+        ],
+        "pictures": [
+          {
+            "id": 1,
+            "picture_url": "right",
+            "title": "Launch",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "....buralara yaz",
+            "content": ["* Mint of 1000 of 8888 unique Horseys on website for pre-sale", 
+              "* Partnership & Collaborations & Giveaways",
+              "* Public sale on website"]
+          },
+          {
+            "id": 0,
+            "picture_url": "left",
+            "title": "Development",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "Launch",
+            "content": ["* List on the secondary markets",
+              "* Live on Rarity tools",
+              "* Community events"]
+          },
+          {
+            "id": 1,
+            "picture_url": "right",
+            "title": "Creation of Phenomenal Horseys",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "",
+            "content": ["* Choosing three of the most active people on our Discord channel and the creation of their own Horsey NFT characters",
+              "* The income of Phenomenal Horseys will be given to their owners!",
+              "* New additions on special days"]
+
+          },
+          {
+            "id": 0,
+            "picture_url": "left",
+            "title": "Release of Horsey Wives",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "Launch",
+            "content": ["* After the sold out , the launch of Horsey Wives",
+              "* Free airdrop for the community",
+              "* The holders of Horseys will be whitelisted for future sales.",
+              "* Giveaway physical gifts worth of $2000 to the 5 Horsey holders who has both male and female Horseys."]
+          },
+          {
+            "id": 1,
+            "picture_url": "right",
+            "title": "Breeding",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "....buralara yaz",
+            "content": ["* 3D Baby Horseys will be randomly minted from the website",
+              "* Holders of both male & female collection will have their 3d Babys free!",
+              "* The more Horsey family you hold the more baby you get!"]
+          },
+          {
+            "id": 1,
+            "picture_url": "left",
+            "title": "Playable Metaverse Avatars",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "....buralara yaz",
+            "content": ["* Horsey GANG is ready to be a family and take their place in Metaverse!", 
+              "* Once all objects are achieved, Horsey Gang will start a life in their universe, Horsecity!", 
+              "* In Horsecity, 3D Baby Horsey owners will create their own story by giving life to the characters to meet new people, play various games and make a new life in their metaverse"]
+          }
+        ]
       }
 
     ]
