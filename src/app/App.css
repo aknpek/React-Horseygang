@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
-@import url('https://fonts.googleapis.com/css?family=Jost');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+@import url("https://fonts.googleapis.com/css?family=Jost");
 @import url("https://fonts.googleapis.com/css?family=Baloo");
-
-
 
 .MainApp {
   position: absolute;
@@ -34,28 +32,24 @@
   animation: 1.5s ease-out 0s 1 slideInFromRight;
 }
 
-.Collection-Container{
+.Collection-Container {
   height: calc(65rem + 20px);
-
 }
 
-.Presale-Svg{
-  height: 100px;
-  width: auto;
-  position: absolute;
+.Presale-Container {
+  background-image: url("./../assets/images/background.svg");
+  height: 90vh;
 }
-
 
 @keyframes slideInFromLeft {
   0% {
     transform: translateY(-100%);
     opacity: 0.1;
     transform: scale(0.8);
-
   }
   100% {
     transform: translateY(0);
-    opacity: 1.0;
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -63,15 +57,14 @@
 @keyframes slideInFromRight {
   0% {
     transform: translateY(0%);
-    background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    background-color: #fad961;
+    background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
     opacity: 0.5;
-
   }
   100% {
     transform: translateY(100%);
-    background-color: rgb(224, 144, 144); 
-    opacity: 0.0;
+    background-color: rgb(224, 144, 144);
+    opacity: 0;
   }
 }
 
@@ -102,4 +95,3 @@
   z-index: 0;
   top: 50%;
 }
-
