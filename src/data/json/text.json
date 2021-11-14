@@ -65,29 +65,24 @@
       {
         "component-place": "container-third",
         "component-type": "collection",
-        "title": "MetaHomes",
+        "title": "Buy Horsey!",
         "subtitle": "",
         "slogan": [
-          { "id": 0, "slogan": "Why you should buy a Cozy Home?" },
+          {
+            "id": 0,
+            "slogan": "- Horsey Gang series is a project integrated with art. Our artists and experienced team, who have been drawing for many years, will provide 24/7 service to constantly update our collection and provide new entries to the collection."
+          },
           {
             "id": 1,
-            "slogan": "- Own a real part of our Cozy Neighborhood and be part of the Cozy Community!"
+            "slogan": "- Our social media and communication accounts will continue to work for community by providing active feedback to you."
           },
           {
             "id": 2,
-            "slogan": "- Generate revenue on your investment by managing a Bed and Breakfast!"
+            "slogan": "- Your Horsey and Horsey Wives series  will bring you new NFTs and will have both artistic and commercial returns. We have given detailed information on the road map."
           },
           {
             "id": 3,
-            "slogan": "- Mint a Cozy Home to receive 1% revenue on all of its secondary sales!"
-          },
-          {
-            "id": 4,
-            "slogan": "- Link your Cozy Homes throughout the Metaverse to appear in virtual spaces (i.e. Decentraland, or VR Reality Spaces)!"
-          },
-          {
-            "id": 5,
-            "slogan": "- Get surprise gifts for special events like new year, Halloween for your Cozy Home!"
+            "slogan": "- It is a collection that has taken its place in the market with the support of you, and our first goal is to win together."
           }
         ],
         "pictures": [
