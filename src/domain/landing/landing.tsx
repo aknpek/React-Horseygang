@@ -111,7 +111,6 @@ const Landing: React.FC = () => {
           />
         
           <div className={"Presale-Svg"} style={{backgroundImage: `url("/background.svg")`}} >
-
           </div>
         </div>
         <div className={"Home-Container"}>
