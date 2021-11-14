@@ -35,20 +35,26 @@
       {
         "component-place": "container-second",
         "component-type": "promotion",
-        "title": "",
-        "subtitle": "SOON!",
+        "title": "Horsey Gang",
+        "subtitle": "",
         "slogan": [
           {
             "id": 0,
-            "slogan": "Every homeowner gets access to the private land of Ethereum with Cozy Homes. We are going to start the construction!"
+            "slogan": "Horsey Gang is a collection of 6666 unique hand drawn NFTs living on the Solana Blockchain. This collection is the first one of the three phased Horsey Gang Family project. The next phases are Horseys Wives and 3D Baby Horseys as a playable avatars futured in the metaverse. ",
+            "slogan2": ""
+
           },
           {
             "id": 1,
-            "slogan": "The fantastic realm is a piece of land on the Ethereum Blockchain network that only those who know the secret shall have access to!"
+            "slogan": "Horsey Gang Nfts are designed as a project that can be stored for a long time and will gain value with each passing time. Horsey owners involved in this project will have privileges for next phases that will be done in the future.",
+            "slogan2": ""
+
           },
           {
             "id": 2,
-            "slogan": "And the unique cozy homes in this mythical fantastic land are only limited to 7999 in quantity and the deeds will be sold for *** ETH."
+            "slogan": "With Horseys you can have fun and earn at the same time! Horseys are ready for a dream run! As you move toward a dream the  dream  moves towards you! Be a member of our gang and run to your dreams with Horseys! ",
+            "slogan2": ""
+
           }
         ],
         "pictures": [
@@ -70,25 +76,33 @@
         "slogan": [
           {
             "id": 0,
-            "slogan": "- Horsey Gang series is a project integrated with art. Our artists and experienced team, who have been drawing for many years, will provide 24/7 service to constantly update our collection and provide new entries to the collection."
+            "slogan": "- Horsey Gang series is a project integrated with art. Our artists and experienced team, who have been drawing for many years, will provide 24/7 service to constantly update our collection and provide new entries to the collection.",
+            "slogan2": ""
+
           },
           {
             "id": 1,
-            "slogan": "- Our social media and communication accounts will continue to work for community by providing active feedback to you."
+            "slogan": "- Our social media and communication accounts will continue to work for community by providing active feedback to you.",
+            "slogan2": ""
+
           },
           {
             "id": 2,
-            "slogan": "- Your Horsey and Horsey Wives series  will bring you new NFTs and will have both artistic and commercial returns. We have given detailed information on the road map."
+            "slogan": "- Your Horsey and Horsey Wives series  will bring you new NFTs and will have both artistic and commercial returns. We have given detailed information on the road map.",
+            "slogan2": ""
+
           },
           {
             "id": 3,
-            "slogan": "- It is a collection that has taken its place in the market with the support of you, and our first goal is to win together."
+            "slogan": "- It is a collection that has taken its place in the market with the support of you, and our first goal is to win together.",
+            "slogan2": ""
+
           }
         ],
         "pictures": [
           {
             "id": 0,
-            "picture_url": "cadi",
+            "picture_url": "presale",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -105,7 +119,7 @@
         "pictures": [
           {
             "id": 0,
-            "picture_url": "ufo",
+            "picture_url": "horsey1",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -113,7 +127,7 @@
           },
           {
             "id": 1,
-            "picture_url": "ktp",
+            "picture_url": "horsey2",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -121,7 +135,7 @@
           },
           {
             "id": 2,
-            "picture_url": "sade",
+            "picture_url": "horsey3",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -129,7 +143,7 @@
           },
           {
             "id": 3,
-            "picture_url": "ejderha",
+            "picture_url": "horsey4",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -137,7 +151,7 @@
           },
           {
             "id": 4,
-            "picture_url": "dondurma",
+            "picture_url": "horsey5",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -145,7 +159,7 @@
           },
           {
             "id": 5,
-            "picture_url": "sade2",
+            "picture_url": "horsey6",
             "title": "",
             "subtitle": "",
             "hyperlink": "",
@@ -408,6 +422,38 @@
               "Horsey GANG is ready to be a family and take their place in Metaverse!",
               "Once all objects are achieved, Horsey Gang will start a life in their universe, Horsecity!",
               "In Horsecity, 3D Baby Horsey owners will create their own story by giving life to the characters to meet new people, play various games and make a new life in their metaverse"
+            ]
+          }
+        ]
+      },
+
+
+      {
+        "component-place": "container-faq",
+        "component-type": "banner",
+        "title": "Faq",
+        "subtitle": "",
+        "slogan": [
+          { "id": 0, "slogan": "HOW CAN I MINT A HORSEY?" , "slogan2": "You can mint Horseys on our website!"},
+          { "id": 1, "slogan": "WHEN IS THE LAUNCH?" , "slogan2": "The drop date will be announced soon (follow our social channels for exact times!)"},
+          { "id": 2, "slogan": "HOW MUCH WILL IT COST?" , "slogan2": "Mint price will be 0.99 SOL."},
+          { "id": 3, "slogan": "WHAT SOLANA WALLETS CAN I USE? " , "slogan2": "At launch we will be allowing purchases and management through two of Solana’s main wallets; Phantom and Sollet."},
+          { "id": 4, "slogan": "IS THERE A LIMIT?" , "slogan2": "We will be limiting people to 1 horsey per transaction. This means you can return to the mint section as many times as you want"},
+          { "id": 5, "slogan": "DO YOU HAVE A RARITY SYSTEM?" , "slogan2": "We will be limiting people to 1 horsey per transaction. This means you can return to the mint section as many times as you want"},
+          { "id": 6, "slogan": "WILL THERE BE SECONDARY MARKET?" , "slogan2": "We will be limiting people to 1 horsey per transaction. This means you can return to the mint section as many times as you want"},
+          { "id": 7, "slogan": "WHAT UTILITY DOES HORSEY GANG OFFER?" , "slogan2": "The first utility Horsey Gang provide holders is the chance of free airdrops, giveaways, gifts and incomes from sales. Also all Horsey family holders will get 3d NFT Baby Horses for free."},
+          { "id": 8, "slogan": "HOW CAN I CONTACT TO YOU?" , "slogan2": "If you have any questions or concerns you can get in contact with us by joining our discord server and opening a support ticket."}
+        ],
+        "pictures": [
+        
+          {
+            "id": 1,
+            "picture_url": "",
+            "title": "",
+            "subtitle": "",
+            "hyperlink": "",
+            "description": "",
+            "content": [
             ]
           }
         ]

@@ -13,6 +13,7 @@ import RoadMap from "./RoadMap";
 import Reflect from "../../svgs/Reflect";
 import { EnterenceContainer } from "./EnterenceContainer";
 import Leaf from "../../components/Leaf";
+import { Faq } from "./Faq";
 
 const getDocHeight = () => {
   return Math.max(
@@ -143,6 +144,11 @@ const Landing: React.FC = () => {
           showFifthContainer={showThirdContainer}
           data={data["landing"]["containers"][4]}
         ></FifthContainer>
+
+
+        <div>
+          <Faq data={data["landing"]["containers"][10]} />
+          </div>
 
         <div>
           <RoadMap data={data["landing"]["containers"][9]} />

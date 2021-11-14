@@ -42,6 +42,7 @@ export interface IHeader {
 export interface ISlogan {
   id: number;
   slogan: string;
+  slogan2: string;
 }
 
 export interface IContainer {
