@@ -264,7 +264,10 @@ const RarirtyImages: React.FC<IPictures> = (props) => {
       scale: 0.5,
       delay: 0.1,
       duration: 0.3,
-      scrollTrigger: refEachImage.current!,
+      scrollTrigger: {
+        trigger: refEachImage.current!,
+        toggleActions: "play none none reverse",
+      },
     });
   });
 

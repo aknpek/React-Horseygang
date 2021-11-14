@@ -1,20 +1,25 @@
 import styled from "styled-components";
 import { useRef, useEffect } from "react";
-import { IContainer, IPictures } from "../types";
+import { IContainer, IPictures } from "../../types";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const RoadMapContainer = styled.section`
   height: 2100px;
+
+
   .container {
     h2 {
       color: white;
+      font-family: "Fredoka One", cursive;
+
     }
     h1 {
       text-align: center;
       color: white;
       font-size: 45px;
-
+      font-family: "Fredoka One", cursive;
+      font-weight: 400;
     }
     margin: 0 auto;
     width: 85vw;
@@ -42,8 +47,11 @@ const RoadMapContainer = styled.section`
           li {
             font-size: 19px;
             font-weight: 500;
-            margin: 0.5rem 1rem 0
+            margin: 0.5rem 1rem 0;
             padding: 0;
+            font-family: "Josefin Sans", cursive;
+            line-height: 30px;
+
           }
           display: flex;
           flex-direction: column;
@@ -91,7 +99,7 @@ const RoadMapContainer = styled.section`
           }
           &.five {
             top: 1392px;
-          },
+          }
           &.six {
             top: 1740px;
           }

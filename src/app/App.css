@@ -39,6 +39,12 @@
 
 }
 
+.Presale-Svg{
+  height: 100px;
+  width: auto;
+  position: absolute;
+}
+
 
 @keyframes slideInFromLeft {
   0% {

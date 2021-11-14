@@ -486,7 +486,7 @@ export const scrollToSection = (className: string) => {
 
 interface IHeaderExtension extends IHeader {
   showThirdContainer: Boolean;
-  scrollPosition: Number;
+  // scrollPosition: Number;
 }
 
 const openInNewTab = (url: string) => {
@@ -528,7 +528,6 @@ const Header: React.FC<IHeaderExtension> = (props) => {
         });
     }
   };
-  useEffect(() => { }, [props.showThirdContainer]);
   useEffect(() => {
     fetchBalance();
   }, [account]);

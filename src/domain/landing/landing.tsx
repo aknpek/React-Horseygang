@@ -9,7 +9,8 @@ import ThirdContainer from "./Collections";
 import TeamsContainer from "./TeamsContainer";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import RoadMap from "../../components/RoadMap";
+import RoadMap from "./RoadMap";
+import Reflect from "../../svgs/Reflect";
 import { EnterenceContainer } from "./EnterenceContainer";
 import Leaf from "../../components/Leaf";
 
@@ -90,7 +91,6 @@ const Landing: React.FC = () => {
           <Header
             {...header_data}
             showThirdContainer={showThirdContainer}
-            scrollPosition={scrollPosition.current}
           />
         </FirstContainer>
 
@@ -109,6 +109,10 @@ const Landing: React.FC = () => {
             metaHomes={false}
             picture={true}
           />
+        
+          <div className={"Presale-Svg"} style={{backgroundImage: `url("/background.svg")`}} >
+
+          </div>
         </div>
         <div className={"Home-Container"}>
           <div>
