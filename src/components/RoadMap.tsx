@@ -10,9 +10,15 @@ const RoadMapContainer = styled.section`
     h2 {
       color: white;
     }
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 45px;
+      
+    }
     margin: 0 auto;
     width: 85vw;
-
+    
     .roadmapWrapper {
       width: 100%;
       position: relative;
@@ -23,6 +29,8 @@ const RoadMapContainer = styled.section`
         justify-content: space-around;
         &.left {
           flex-direction: row-reverse;
+          margin-right: auto;
+            border-radius: 20px 0px 20px 20px;
         }
         .textContext{
           width: 50%;
@@ -31,9 +39,14 @@ const RoadMapContainer = styled.section`
           align-items: center;
         }
         .discourseContent {
+          li {
+            font-size: 19px;
+            font-weight: 500;
+            margin: 0.5rem 1rem 0
+            padding: 0;
+          }
           display: flex;
           flex-direction: column;
-          align-items: center;
           justify-content: center;
           width: 37vw;
           height: 310px;
@@ -44,7 +57,6 @@ const RoadMapContainer = styled.section`
             border-radius: 0 20px 20px 20px;
           }
           &.left {
-
             margin-right: auto;
             border-radius: 20px 0px 20px 20px;
           }
@@ -115,9 +127,11 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
         <h2>{props.data.title}</h2>
       </div>
       <div className={`discourseContent ${props.data.picture_url}`}>
-        {props.data.content?.map((value: string) => {
-          return <li>{value}</li>;
-        })}
+        <ul>
+          {props.data.content?.map((value: string) => {
+            return <li>{value}</li>;
+          })}
+        </ul>
       </div>
     </div>
   );

@@ -62,8 +62,8 @@ export const SecondComponent = styled.div<ISecondComponent>`
   @media screen and (max-width: 1300px) {
     max-width: 1300px;
     ${({ preSale }) =>
-      preSale &&
-      css`
+    preSale &&
+    css`
         margin-top: 320px;
         max-height: 550px;
         min-height: 550px;
@@ -78,8 +78,8 @@ export const SecondComponent = styled.div<ISecondComponent>`
     grid-template-rows: 0.1fr 0.5fr 1fr 1fr;
 
     ${({ preSale }) =>
-      preSale &&
-      css`
+    preSale &&
+    css`
         margin-top: 320px;
         max-height: 950px;
         min-height: 950px;
@@ -132,23 +132,23 @@ export const SecondComponent = styled.div<ISecondComponent>`
     grid-template-rows: 0.1fr 1fr 1fr 1fr;
 
     ${({ metaHomes }) =>
-      !metaHomes &&
-      css`
+    !metaHomes &&
+    css`
         margin-top: 50px;
         max-height: 720px;
       `}
 
     ${({ metaHomes }) =>
-      metaHomes &&
-      css`
+    metaHomes &&
+    css`
         margin-top: 150px;
         max-height: 850px;
         min-height: 850px;
       `}
 
     ${({ preSale }) =>
-      preSale &&
-      css`
+    preSale &&
+    css`
         margin-top: 220px;
         grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
         max-height: 600px;
@@ -179,23 +179,23 @@ export const SecondComponent = styled.div<ISecondComponent>`
     grid-template-rows: 0.1fr 1fr 1fr 1fr;
 
     ${({ metaHomes }) =>
-      !metaHomes &&
-      css`
+    !metaHomes &&
+    css`
         margin-top: 50px;
         max-height: 550px;
       `}
 
     ${({ metaHomes }) =>
-      metaHomes &&
-      css`
+    metaHomes &&
+    css`
         margin-top: 170px;
         max-height: 900px;
         min-height: 900px;
       `}
 
     ${({ preSale }) =>
-      preSale &&
-      css`
+    preSale &&
+    css`
         margin-top: 300px;
         grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
         max-height: 500px;
@@ -241,7 +241,8 @@ interface PropsSecond {
   data: IContainer;
   textDirection: Boolean;
   preSale: Boolean;
-  metaHomes: Boolean;
+  metaHomes: boolean;
+  picture?: boolean;
 }
 
 const SecondContainer: React.FC<PropsSecond> = (props) => {
@@ -251,7 +252,7 @@ const SecondContainer: React.FC<PropsSecond> = (props) => {
       preSale={props.preSale}
       metaHomes={props.metaHomes}
     >
-      <Picture picture={props.data["pictures"]} />
+      {props.picture ? <Picture picture={props.data["pictures"]} /> : null}
       <TextDisplay textDirection={props.textDirection} {...props.data} />
     </SecondComponent>
   );

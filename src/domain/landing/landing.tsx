@@ -1,11 +1,10 @@
 import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
-import { IContent, IHeader, IRarity } from "../../types";
-import React, { useContext, useEffect, useRef, useState } from "react";
+import { IContent, IHeader } from "../../types";
+import React, { useEffect, useRef, useState } from "react";
 
 import FifthContainer from "./RarityContainer";
 import Header from "../../components/Header";
 import SecondContainer from "./EnterenceDescription";
-import SeventhContainer from "./SeventhContainer";
 import ThirdContainer from "./Collections";
 import TeamsContainer from "./TeamsContainer";
 import { gsap } from "gsap";
@@ -26,12 +25,6 @@ const getDocHeight = () => {
 };
 
 const Landing: React.FC = () => {
-  const loadingContext = useContext(LoadingContext);
-  const loading = async () => {
-    setTimeout(() => {
-      loadingContext.done();
-    }, 3000)
-  };
   const data: IContent = require("../../data/json/text.json");
 
   const header_data: IHeader = data["landing"]["header"];
@@ -91,7 +84,7 @@ const Landing: React.FC = () => {
   });
 
   return (
-    <GeneralWrapper onLoad={() => loading()}>
+    <GeneralWrapper >
       <FirstWrapper>
         <FirstContainer>
           <Header
@@ -101,14 +94,22 @@ const Landing: React.FC = () => {
           />
         </FirstContainer>
 
-        <div>
+        {/* <div>
           <Leaf />
-        </div>
+        </div> */}
 
         <div className={"EnterenceContainer"}>
           <EnterenceContainer />
         </div>
-
+        <div className={"Presale-Container"}>
+          <SecondContainer
+            data={data["landing"]["containers"][5]}
+            textDirection={true}
+            preSale={true}
+            metaHomes={false}
+            picture={true}
+          />
+        </div>
         <div className={"Home-Container"}>
           <div>
             <SecondContainer
@@ -116,6 +117,7 @@ const Landing: React.FC = () => {
               textDirection={true}
               preSale={false}
               metaHomes={false}
+              picture={true}
             />
           </div>
           <div>
@@ -123,7 +125,8 @@ const Landing: React.FC = () => {
               data={data["landing"]["containers"][1]}
               textDirection={false}
               preSale={false}
-              metaHomes={true}
+              metaHomes={false}
+              picture={false}
             />
           </div>
         </div>
@@ -143,14 +146,7 @@ const Landing: React.FC = () => {
         </div>
 
 
-        <div className={"Presale-Container"}>
-          <SecondContainer
-            data={data["landing"]["containers"][5]}
-            textDirection={true}
-            preSale={true}
-            metaHomes={false}
-          />
-        </div>
+
 
         <div className={"TeamsContainer"}>
           <TeamsContainer data={data["landing"]["containers"][6]} />
