@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import react, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { IContainer, IPictures } from "../types";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 const RoadMapContainer = styled.section`
-  height: 1300px;
+  height: 2100px;
   .container {
     h2 {
       color: white;
@@ -20,8 +20,16 @@ const RoadMapContainer = styled.section`
       .discourse {
         width: 100%;
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        &.left {
+          flex-direction: row-reverse;
+        }
+        .textContext{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .discourseContent {
           display: flex;
           flex-direction: column;
@@ -36,6 +44,7 @@ const RoadMapContainer = styled.section`
             border-radius: 0 20px 20px 20px;
           }
           &.left {
+
             margin-right: auto;
             border-radius: 20px 0px 20px 20px;
           }
@@ -45,7 +54,7 @@ const RoadMapContainer = styled.section`
         position: absolute;
         left: calc(50% - 2px);
         top: 0;
-        height: 1400px;
+        height: 2100px;
         width: 4px;
         background: white;
         display: block;
@@ -68,6 +77,12 @@ const RoadMapContainer = styled.section`
           &.four {
             top: 1044px;
           }
+          &.five {
+            top: 1392px;
+          },
+          &.six {
+            top: 1740px;
+          }
         }
       }
     }
@@ -80,8 +95,6 @@ interface IEachRoadMap {
 
 const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
   let refEachImage = useRef<HTMLDivElement>(null);
-  console.log(props);
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.from(refEachImage.current!, {
@@ -96,10 +109,11 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
       },
     });
   });
-  console.log(props);
   return (
-    <div className="discourse" ref={refEachImage}>
-      <h2>{props.data.title}</h2>
+    <div className={`discourse ${props.data.picture_url}`} ref={refEachImage}>
+      <div className="textContext">
+        <h2>{props.data.title}</h2>
+      </div>
       <div className={`discourseContent ${props.data.picture_url}`}>
         {props.data.content?.map((value: string) => {
           return <li>{value}</li>;
@@ -127,6 +141,8 @@ const RoadMap: React.FC<IRoadMap> = (props) => {
             <div className="circle two" />
             <div className="circle three" />
             <div className="circle four" />
+            <div className="circle five" />
+            <div className="circle six" />
           </div>
         </article>
       </div>
