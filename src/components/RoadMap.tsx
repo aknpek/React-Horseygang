@@ -14,7 +14,7 @@ const RoadMapContainer = styled.section`
       text-align: center;
       color: white;
       font-size: 45px;
-      
+
     }
     margin: 0 auto;
     width: 85vw;
@@ -30,7 +30,7 @@ const RoadMapContainer = styled.section`
         &.left {
           flex-direction: row-reverse;
           margin-right: auto;
-            border-radius: 20px 0px 20px 20px;
+          border-radius: 20px 0px 20px 20px;
         }
         .textContext{
           width: 50%;
@@ -97,9 +97,25 @@ const RoadMapContainer = styled.section`
           }
         }
       }
+      @media screen and (max-width: 1000px) {
+        .middleLine {
+          display: none;
+        }
+        .discourse {
+          display: flex;
+          flex-direction: column;
+          .discourseContent {
+            width: 100%;
+          }
+          &.left {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
     }
   }
-`;
+  `;
 
 interface IEachRoadMap {
   data: IPictures;
