@@ -38,7 +38,7 @@
 
 .Presale-Container {
   background-image: url("./../assets/images/background.svg");
-  height: 90vh;
+  background-size: cover;
 }
 
 @keyframes slideInFromLeft {
