@@ -387,7 +387,7 @@ const TextBlock = styled.div<ITextDisplay>`
           border-radius: 0.8rem;
           border-width: 2rem;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0;
           font-size: 1.2rem;
 
           justify-content: center;
@@ -397,7 +397,7 @@ const TextBlock = styled.div<ITextDisplay>`
         .preSaleEth {
           font-family: "Fredoka One", normal;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0;
           font-weight: 200;
           display: flex;
           height: 3rem;
@@ -517,7 +517,7 @@ const TextBlock = styled.div<ITextDisplay>`
           border-radius: 0.8rem;
           border-width: 2rem;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0e;
           font-size: 1rem;
 
           justify-content: center;
@@ -527,7 +527,7 @@ const TextBlock = styled.div<ITextDisplay>`
         .preSaleEth {
           font-family: "Fredoka One", normal;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0;
           font-weight: 200;
           display: flex;
           height: 3rem;
@@ -655,7 +655,7 @@ const TextBlock = styled.div<ITextDisplay>`
           border-radius: 0.8rem;
           border-width: 2rem;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0;
           font-size: 1rem;
 
           justify-content: center;
@@ -665,7 +665,7 @@ const TextBlock = styled.div<ITextDisplay>`
         .preSaleEth {
           font-family: "Fredoka One", normal;
           color: white;
-          border: 1.5px solid #05344e;
+          border: 1.5px solid #AFE1F0;
           font-weight: 200;
           display: flex;
           height: 3rem;

@@ -40,6 +40,20 @@
   background-image: url("./../assets/images/background.svg");
   height: 100vh;
   background-size: cover;
+  background-position: center;
+}
+.collection {
+  background-image: url("./../assets/images/space.png");
+  background-size: cover;
+  height: 300vw;
+}
+.rareContainer {
+  width: 100%;
+  height: min-content;
+}
+.imgRare {
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes slideInFromLeft {

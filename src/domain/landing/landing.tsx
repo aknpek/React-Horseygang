@@ -14,6 +14,7 @@ import Reflect from "../../svgs/Reflect";
 import { EnterenceContainer } from "./EnterenceContainer";
 import Leaf from "../../components/Leaf";
 import { Faq } from "./Faq";
+import TextContainer from "./TextContainer";
 
 const getDocHeight = () => {
   return Math.max(
@@ -110,40 +111,30 @@ const Landing: React.FC = () => {
             metaHomes={false}
             picture={true}
           />
-
-          <div className="Background" >
-          </div>
         </div>
         <div className={"Home-Container"}>
 
         </div>
-
-        <ThirdContainer
-          showThirdContainer={showThirdContainer}
-          data={data["landing"]["containers"][2]}
-        ></ThirdContainer>
-
-        <FifthContainer
-          showFifthContainer={showThirdContainer}
-          data={data["landing"]["containers"][4]}
-        ></FifthContainer>
-
-
-
-
-        <div>
-          <RoadMap data={data["landing"]["containers"][9]} />
-        </div>
-
-        <div>
-          <Faq data={data["landing"]["containers"][10]} />
-        </div>
-
-
-
-
-        <div className={"TeamsContainer"}>
-          <TeamsContainer data={data["landing"]["containers"][6]} />
+        <TextContainer
+          data={data["landing"]["containers"][0]}
+        />
+        <div className="collection">
+          <ThirdContainer
+            showThirdContainer={showThirdContainer}
+            data={data["landing"]["containers"][2]}
+          ></ThirdContainer>
+          <div className="rareContainer">
+            <img src="./../../assets/images/rare.png" alt="rare"></img>
+          </div>
+          <div>
+            <RoadMap data={data["landing"]["containers"][9]} />
+          </div>
+          <div>
+            <Faq data={data["landing"]["containers"][10]} />
+          </div>
+          <div className={"TeamsContainer"}>
+            <TeamsContainer data={data["landing"]["containers"][6]} />
+          </div>
         </div>
       </FirstWrapper>
     </GeneralWrapper>
