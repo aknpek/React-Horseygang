@@ -115,24 +115,7 @@ const Landing: React.FC = () => {
           </div>
         </div>
         <div className={"Home-Container"}>
-          <div>
-            <SecondContainer
-              data={data["landing"]["containers"][0]}
-              textDirection={true}
-              preSale={false}
-              metaHomes={false}
-              picture={true}
-            />
-          </div>
-          <div>
-            <SecondContainer
-              data={data["landing"]["containers"][1]}
-              textDirection={false}
-              preSale={false}
-              metaHomes={false}
-              picture={false}
-            />
-          </div>
+
         </div>
 
         <ThirdContainer
@@ -148,7 +131,7 @@ const Landing: React.FC = () => {
 
         <div>
           <Faq data={data["landing"]["containers"][10]} />
-          </div>
+        </div>
 
         <div>
           <RoadMap data={data["landing"]["containers"][9]} />

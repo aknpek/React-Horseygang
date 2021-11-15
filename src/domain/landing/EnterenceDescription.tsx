@@ -12,11 +12,9 @@ interface ISecondComponent {
 }
 
 export const SecondComponent = styled.div<ISecondComponent>`
-  margin-top: 100px;
   position: relative;
   display: grid;
   width: 100%;
-  height: 600px;
 
   ${({ textDireciton }) =>
     textDireciton &&
@@ -64,7 +62,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ preSale }) =>
     preSale &&
     css`
-        margin-top: 320px;
         max-height: 550px;
         min-height: 550px;
       `}
@@ -80,11 +77,9 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ preSale }) =>
     preSale &&
     css`
-        margin-top: 320px;
         max-height: 950px;
         min-height: 950px;
       `}
-
     .picture {
       margin: auto;
       grid-row-start: 2;
