@@ -129,12 +129,14 @@ const Landing: React.FC = () => {
         ></FifthContainer>
 
 
-        <div>
-          <Faq data={data["landing"]["containers"][10]} />
-        </div>
+
 
         <div>
           <RoadMap data={data["landing"]["containers"][9]} />
+        </div>
+
+        <div>
+          <Faq data={data["landing"]["containers"][10]} />
         </div>
 
 
