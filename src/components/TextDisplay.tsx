@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 // import CozyLogo from "../svgs/CozyLogo";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { gsap} from "gsap";
+import { gsap } from "gsap";
 import { scrollToSection } from "../components/Header";
 import styled from "styled-components";
 
@@ -44,7 +44,7 @@ const TextBlock = styled.div<ITextDisplay>`
       display: flex;
       height: 8rem;
       justify-content: ${(props) =>
-        props.preSale || props.metaHomes ? "center" : "left"};
+    props.preSale || props.metaHomes ? "center" : "left"};
       align-items: center;
       .cozyHomeLogoDiv2 {
         /* position: absolute; */
@@ -82,7 +82,7 @@ const TextBlock = styled.div<ITextDisplay>`
         border-radius: 0.8rem;
         border-width: 2rem;
         color: white;
-        border: 1.5px solid #05344e;
+        border: 1.5px solid #AFE1F0;
 
         justify-content: center;
         align-items: center;
@@ -91,7 +91,7 @@ const TextBlock = styled.div<ITextDisplay>`
       .preSaleEth {
         font-family: "Fredoka One", normal;
         color: white;
-        border: 1.5px solid #05344e;
+        border: 1.5px solid #AFE1F0;
         font-weight: 200;
         display: flex;
         height: 4rem;
@@ -303,7 +303,7 @@ const TextBlock = styled.div<ITextDisplay>`
       }
       div {
         width: ${(props) =>
-          props.metaHomes || props.preSale ? "100%" : "80%"};
+    props.metaHomes || props.preSale ? "100%" : "80%"};
         h1 {
         }
       }
@@ -493,7 +493,7 @@ const TextBlock = styled.div<ITextDisplay>`
 
       .messageMiddleDiv {
         width: ${(props) =>
-          props.metaHomes || props.preSale ? "100%" : "80%"};
+    props.metaHomes || props.preSale ? "100%" : "80%"};
         .message {
           display: flex;
           justify-content: left;
