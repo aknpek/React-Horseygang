@@ -113,7 +113,6 @@ const Landing: React.FC = () => {
           />
         </div>
         <div className={"Home-Container"}>
-
         </div>
         <TextContainer
           data={data["landing"]["containers"][0]}

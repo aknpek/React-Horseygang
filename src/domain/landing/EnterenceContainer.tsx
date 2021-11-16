@@ -32,7 +32,7 @@ export const EnterenceContainer: React.FC = (props) => {
   });
   return (
     <EnterenceComponent ref={ref}>
-      <img src={Pictures["enterence_gif"].default} />
+      <img src={Pictures["enterence_gif"].default} alt="mainGif" />
     </EnterenceComponent>
   );
 };
