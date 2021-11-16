@@ -45,15 +45,17 @@
 .collection {
   background-image: url("./../assets/images/space.png");
   background-size: cover;
-  height: 300vh;
+  height: 250vh;
 }
-.rareContainer {
-  width: 100%;
-  height: min-content;
-}
+
 .imgRare {
   max-width: 100%;
   height: auto;
+  background-color: red;
+}
+#imageRare {
+  height: auto;
+  width: 100%;
 }
 
 @keyframes slideInFromLeft {

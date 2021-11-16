@@ -15,6 +15,7 @@ import { EnterenceContainer } from "./EnterenceContainer";
 import Leaf from "../../components/Leaf";
 import { Faq } from "./Faq";
 import TextContainer from "./TextContainer";
+import Pictures from "../../components/Locals";
 
 const getDocHeight = () => {
   return Math.max(
@@ -114,6 +115,7 @@ const Landing: React.FC = () => {
         </div>
         <div className={"Home-Container"}>
         </div>
+
         <TextContainer
           data={data["landing"]["containers"][0]}
         />
@@ -123,17 +125,17 @@ const Landing: React.FC = () => {
             data={data["landing"]["containers"][2]}
           ></ThirdContainer>
           <div className="rareContainer">
-            <img src="./../../assets/images/rare.png" alt="rare"></img>
+            <img id="imageRare" src={Pictures["rare"].default} alt="rare"></img>
           </div>
-          <div>
-            <RoadMap data={data["landing"]["containers"][9]} />
-          </div>
-          <div>
-            <Faq data={data["landing"]["containers"][10]} />
-          </div>
-          <div className={"TeamsContainer"}>
-            <TeamsContainer data={data["landing"]["containers"][6]} />
-          </div>
+        </div>
+        <div>
+          <RoadMap data={data["landing"]["containers"][9]} />
+        </div>
+        <div>
+          <Faq data={data["landing"]["containers"][10]} />
+        </div>
+        <div className={"TeamsContainer"}>
+          <TeamsContainer data={data["landing"]["containers"][6]} />
         </div>
       </FirstWrapper>
     </GeneralWrapper>
