@@ -123,6 +123,10 @@ const RoadMapContainer = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    height: 2700px;
+  }
   `;
 
 interface IEachRoadMap {

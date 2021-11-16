@@ -45,7 +45,9 @@
 .collection {
   background-image: url("./../assets/images/space.png");
   background-size: cover;
-  height: 300vw;
+  height: 300vh;
+
+  
 }
 .rareContainer {
   width: 100%;
