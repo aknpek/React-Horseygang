@@ -322,7 +322,6 @@ const TextBlock = styled.div<ITextDisplay>`
   }
   @media screen and (max-width: 700px) {
     .sloganDiv {
-      margin-top: 19rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -330,7 +329,6 @@ const TextBlock = styled.div<ITextDisplay>`
         justify-content: center;
 
         .slogan {
-          font-size: 3.2rem;
         }
       }
 
@@ -517,7 +515,7 @@ const TextBlock = styled.div<ITextDisplay>`
           border-radius: 0.8rem;
           border-width: 2rem;
           color: white;
-          border: 1.5px solid #AFE1F0e;
+          border: 1.5px solid #AFE1F0;
           font-size: 1rem;
 
           justify-content: center;

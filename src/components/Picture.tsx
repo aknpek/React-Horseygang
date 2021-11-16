@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 
 import { IPictures } from "../types";
 import Pictures from "../components/Locals";
@@ -90,6 +90,7 @@ const PicStyled = styled.div<IPicture>`
   }
   @media screen and (max-width: 700px) {
     div {
+      margin-top: 5rem;
       max-height: 300px;
       max-width: 300px;
       min-width: 300px;
@@ -98,10 +99,10 @@ const PicStyled = styled.div<IPicture>`
   }
   @media screen and (max-width: 500px) {
     div {
-      max-height: 290px;
-      max-width: 290px;
-      min-width: 290px;
-      min-height: 290px;
+      max-height: 250px;
+      max-width: 250px;
+      min-width: 250px;
+      min-height: 250px;
     }
   }
   @media screen and (max-width: 400px) {

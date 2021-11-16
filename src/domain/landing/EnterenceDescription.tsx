@@ -129,7 +129,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ metaHomes }) =>
     !metaHomes &&
     css`
-        margin-top: 50px;
         max-height: 720px;
       `}
 
@@ -144,7 +143,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ preSale }) =>
     preSale &&
     css`
-        margin-top: 220px;
         grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
         max-height: 600px;
         min-height: 600px;
@@ -176,14 +174,12 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ metaHomes }) =>
     !metaHomes &&
     css`
-        margin-top: 50px;
         max-height: 550px;
       `}
 
     ${({ metaHomes }) =>
     metaHomes &&
     css`
-        margin-top: 170px;
         max-height: 900px;
         min-height: 900px;
       `}
@@ -191,7 +187,6 @@ export const SecondComponent = styled.div<ISecondComponent>`
     ${({ preSale }) =>
     preSale &&
     css`
-        margin-top: 300px;
         grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
         max-height: 500px;
         min-height: 500px;

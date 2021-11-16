@@ -38,16 +38,14 @@
 
 .Presale-Container {
   background-image: url("./../assets/images/background.svg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  background-size: contain;
 }
+
 .collection {
   background-image: url("./../assets/images/space.png");
   background-size: cover;
   height: 300vh;
-
-  
 }
 .rareContainer {
   width: 100%;
@@ -111,4 +109,10 @@
   width: 100%;
   z-index: 0;
   top: 50%;
+}
+
+@media screen and (max-width: 1080px) {
+  .Presale-Container {
+    background-repeat: no-repeat;
+  }
 }
