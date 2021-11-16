@@ -1,6 +1,6 @@
 import Pictures from "./Locals";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 const LoadingContainer = styled.div`
@@ -12,30 +12,22 @@ const LoadingContainer = styled.div`
 
 `
 
-const pageVariants = {
-    initial: {
-        opacity: 0,
-    },
-    in: {
-        opacity: 1,
-    },
-    out: {
-        opacity: 0,
-    },
-}
+
 const Waiting = () => {
     return (
         <NavLink to="/enter">
-            <motion.div
-                initial="initial"
-                animate="in"
-                exit="out"
-                variants={pageVariants}
-            >
-                <LoadingContainer>
-                    <img alt="loading" src={Pictures["loadingGif"].default} />
-                </LoadingContainer>
-            </motion.div>
+            <AnimatePresence exitBeforeEnter>
+                <motion.div
+                    transition={{
+                        duration: 2
+                    }}
+                    exit={{ opacity: 0 }}
+                >
+                    <LoadingContainer>
+                        <img alt="loading" src={Pictures["loadingGif"].default} />
+                    </LoadingContainer>
+                </motion.div>
+            </AnimatePresence>
         </NavLink>
     )
 }

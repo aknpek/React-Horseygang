@@ -47,6 +47,9 @@
   background-size: cover;
   height: 250vh;
 }
+.faq {
+  margin-top: 10vh;
+}
 
 .imgRare {
   max-width: 100%;

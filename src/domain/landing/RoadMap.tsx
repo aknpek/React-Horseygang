@@ -3,16 +3,14 @@ import { useRef, useEffect } from "react";
 import { IContainer, IPictures } from "../../types";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 
 const RoadMapContainer = styled.section`
   height: 2100px;
-
-
   .container {
     h2 {
       color: white;
       font-family: "Fredoka One", cursive;
-
     }
     h1 {
       text-align: center;
@@ -23,11 +21,9 @@ const RoadMapContainer = styled.section`
     }
     margin: 0 auto;
     width: 85vw;
-    
     .roadmapWrapper {
       width: 100%;
       position: relative;
-
       .discourse {
         width: 100%;
         display: flex;
@@ -44,6 +40,13 @@ const RoadMapContainer = styled.section`
           align-items: center;
         }
         .discourseContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 37vw;
+          height: 310px;
+          margin-bottom: 40px;
+          background: rgba(189, 195, 199, 0.1);
           li {
             font-size: 19px;
             font-weight: 500;
@@ -51,15 +54,8 @@ const RoadMapContainer = styled.section`
             padding: 0;
             font-family: "Josefin Sans", cursive;
             line-height: 30px;
-
+            color: white;
           }
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          width: 37vw;
-          height: 310px;
-          margin-bottom: 40px;
-          background: orange;
           &.right {
             margin-left: auto;
             border-radius: 0 20px 20px 20px;
@@ -154,13 +150,22 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
       <div className="textContext">
         <h2>{props.data.title}</h2>
       </div>
-      <div className={`discourseContent ${props.data.picture_url}`}>
-        <ul>
-          {props.data.content?.map((value: string) => {
-            return <li>{value}</li>;
-          })}
-        </ul>
-      </div>
+      <motion.div
+        whileHover={{
+          scale: 1.1
+        }}
+        transition={{
+          duration: 0.2
+        }}
+      >
+        <div className={`discourseContent ${props.data.picture_url}`}>
+          <ul>
+            {props.data.content?.map((value: string) => {
+              return <li>{value}</li>;
+            })}
+          </ul>
+        </div>
+      </motion.div>
     </div>
   );
 };

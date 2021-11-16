@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 function getLibrary(provider: any) {
   return new Web3(provider);
 }
-// const Landing = lazy(() => import('../domain/landing/landing'));
+
 function App() {
 
   return (

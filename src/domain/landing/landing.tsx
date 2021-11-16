@@ -119,6 +119,9 @@ const Landing: React.FC = () => {
         <TextContainer
           data={data["landing"]["containers"][0]}
         />
+        <TextContainer
+          data={data["landing"]["containers"][1]}
+        />
         <div className="collection">
           <ThirdContainer
             showThirdContainer={showThirdContainer}
@@ -131,7 +134,7 @@ const Landing: React.FC = () => {
         <div>
           <RoadMap data={data["landing"]["containers"][9]} />
         </div>
-        <div>
+        <div className="faq">
           <Faq data={data["landing"]["containers"][10]} />
         </div>
         <div className={"TeamsContainer"}>
