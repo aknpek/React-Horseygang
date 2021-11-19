@@ -8,6 +8,7 @@ import gsap from "gsap";
 import styled from "styled-components";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Titles from "../../components/Titles";
 
 const ThirdComponent = styled.div<IThirdContainer>`
   display: grid;
@@ -29,15 +30,6 @@ const ThirdComponent = styled.div<IThirdContainer>`
       font-weight: 200;
       color: white;
       font-family: "Fredoka One", normal;
-      -webkit-transition: 0.15s;
-      -moz-transition: 0.15s;
-      -ms-transition: 0.15s;
-      -o-transition: 0.15s;
-      transition: 0.15s;
-    }
-    h1:hover {
-      transition: transform 150ms background-color 0.5s ease color 0.5s ease;
-      transform: scale(1.05);
     }
   }
   .cells {
@@ -57,14 +49,19 @@ const ThirdComponent = styled.div<IThirdContainer>`
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       width: 90%;
       height: 90%;
+      -webkit-transition: 0.15s;
+      -moz-transition: 0.15s;
+      -ms-transition: 0.15s;
+      -o-transition: 0.15s;
+      transition: 0.15s;
+    }:hover {
+      /* transition: transform 150ms background-color 0.5s ease color 0.5s ease; */
+      transform: scale(1.15);
     }
-  }
-  div:hover {
-    transition: transform linear 250ms;
-    transform: translateY(-20px);
   }
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -224,7 +221,6 @@ const ThirdComponent = styled.div<IThirdContainer>`
     flex-direction: column;
     height: 1200px;
     font-size: 1.2rem;
-    pointer-events: none;
 
     .header {
       margin: auto;
@@ -260,7 +256,6 @@ const ThirdComponent = styled.div<IThirdContainer>`
   .BulutFirst {
     position: absolute;
     z-index: 1;
-    pointer-events: none;
     margin-top: 0%;
     margin-left: 0%;
   }
@@ -285,7 +280,10 @@ const EachImage: React.FC<IEachContainer> = (props) => {
       scale: 0.5,
       delay: 0.1,
       duration: 0.2,
-      scrollTrigger: refEachImage.current!,
+      scrollTrigger: {
+        trigger: refEachImage.current!,
+        toggleActions: "play none none reverse",
+      },
     });
   });
 
@@ -318,7 +316,13 @@ const ThirdContainer: React.FC<PropsThird> = (props) => {
   return (
     <ThirdComponent className="Landing-Home">
       <header className={"cell cell-1 header"}>
-        <h1>Collection</h1>
+        <Titles
+          {...{
+            data: { title: "Collection", subtitle: "" },
+            color: "white",
+            colorSub: "white",
+          }}
+        />
       </header>
 
       {props.data.pictures.map((value: IPictures) => (

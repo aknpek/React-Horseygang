@@ -31,16 +31,13 @@ const TitleComponent = styled.div<IDivComponent>`
     color: ${(props) => props.color};
     text-align: center;
     font-weight: 600;
-    font-family: "Baloo";
+    font-family: "Anton";
     transition: transform 250ms;
   }
 
   h2 {
     width: 60%;
     font-size: 1.1rem;
-    /* letter-spacing: .05rem; */
-    font-family: 'Jost';
-    /* font-family: "Josefin Sans", cursive; */
     font-weight: 200;
     color: ${(props) => props.colorSub}; /*  */
     line-height: 2;

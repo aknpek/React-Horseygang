@@ -88,13 +88,10 @@ const Landing: React.FC = () => {
   });
 
   return (
-    <GeneralWrapper >
+    <GeneralWrapper>
       <FirstWrapper>
         <FirstContainer>
-          <Header
-            {...header_data}
-            showThirdContainer={showThirdContainer}
-          />
+          <Header {...header_data} showThirdContainer={showThirdContainer} />
         </FirstContainer>
 
         {/* <div>
@@ -113,20 +110,17 @@ const Landing: React.FC = () => {
             picture={true}
           />
         </div>
-        <div className={"Home-Container"}>
-        </div>
+        <div className={"Home-Container"}></div>
 
-        <TextContainer
-          data={data["landing"]["containers"][0]}
-        />
-        <TextContainer
-          data={data["landing"]["containers"][1]}
-        />
+        <TextContainer data={data["landing"]["containers"][0]} />
+
         <div className="collection">
           <ThirdContainer
             showThirdContainer={showThirdContainer}
             data={data["landing"]["containers"][2]}
           ></ThirdContainer>
+          .
+          <TextContainer data={data["landing"]["containers"][1]} />
           <div className="rareContainer">
             <img id="imageRare" src={Pictures["rare"].default} alt="rare"></img>
           </div>

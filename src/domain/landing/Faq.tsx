@@ -7,10 +7,10 @@ import { gsap } from "gsap";
 import styled from "styled-components";
 
 const FaqContainer = styled.div`
-
   .accordionItem {
-    font-family: 'Jost';
-    /* font-family: "Josefin Sans", cursive; */
+    font-family: "Anton";
+    letter-spacing: 0.05rem;
+
     color: #a7a7a7;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -32,24 +32,60 @@ const FaqContainer = styled.div`
         font-size: 1.1rem;
         font-weight: 300;
         text-align: center;
+        transition: 0.3s ease-out;
       }
 
       span {
+        z-index: 30;
+      }
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(17, 75, 114, 0.1);
+        transform-origin: 90 bottom 90;
+        transform: scaleX(0);
+        transition: 0.3s ease-out;
+        opacity: 1;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      &:hover {
+        h1 {
+          color: #bbbbbb;
+          z-index: 20;
+          font-size: 1.4rem;
+          transition: 0.5s ease-out;
+          transform: rotate(-1deg);
+          cursor: pointer;
+        }
+        &:before {
+          transform: scaleY(0.1);
+          transform: scaleX(1);
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
       }
     }
 
-    .questionButton:hover {
+    /* .questionButton:hover {
       background-color: #f8b279;
       transition: linear 0.2s;
       cursor: pointer;
       color: #15131f;
-      font-family: "Fredoka One", normal;
-    }
+
+      font-family: "Anton";
+    } */
   }
 
   .accordionItem.active .button {
   }
-
   .answerWrapper {
     height: 0;
     overflow: hidden;
@@ -60,9 +96,10 @@ const FaqContainer = styled.div`
   .answerWrapper.open {
     height: 5rem;
     display: flex;
+    position: relative;
+    z-index: 30;
 
     justify-content: center;
-    background-color: #8080803b;
     cursor: pointer;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -70,6 +107,8 @@ const FaqContainer = styled.div`
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
+    transition: height ease 0.4s;
+
     div {
       width: 80%;
       display: flex;
@@ -141,7 +180,7 @@ const AccordionItem: React.FC<IAccordionItem> = (props) => {
         <h1>{props.faq}</h1>
 
         <span className={"questionControl"} key={props.id + "span"}>
-          {props.active ? "-" : "+"}
+          {/* {props.active ? "-" : "+"} */}
         </span>
       </div>
       <div
@@ -185,11 +224,11 @@ export const Faq: React.FC<IAccordion> = (props) => {
       gsap.config({ nullTargetWarn: false });
       gsap.registerPlugin(ScrollTrigger);
       gsap.from(titleRef.current!, {
-        opacity: 0.1,
+        opacity: 0,
         scale: 0.8,
-        duration: 2,
+        duration: 1,
         x: -100,
-        delay: 0.5,
+        delay: 0.3,
         scrollTrigger: {
           trigger: titleRef.current!,
           toggleActions: "play none none reverse",

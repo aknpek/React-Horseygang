@@ -10,13 +10,16 @@ const RoadMapContainer = styled.section`
   .container {
     h2 {
       color: white;
-      font-family: "Fredoka One", cursive;
+      font-family: "Anton";
+      font-weight: 200;
+      font-size: 35px;
+
     }
     h1 {
       text-align: center;
       color: white;
       font-size: 45px;
-      font-family: "Fredoka One", cursive;
+      font-family: "Anton";
       font-weight: 400;
     }
     margin: 0 auto;
@@ -33,7 +36,7 @@ const RoadMapContainer = styled.section`
           margin-right: auto;
           border-radius: 20px 0px 20px 20px;
         }
-        .textContext{
+        .textContext {
           width: 50%;
           display: flex;
           justify-content: center;
@@ -46,13 +49,14 @@ const RoadMapContainer = styled.section`
           width: 37vw;
           height: 310px;
           margin-bottom: 40px;
-          background: rgba(189, 195, 199, 0.1);
+          background: rgba(17, 75, 114, 0.1);
           li {
             font-size: 19px;
-            font-weight: 500;
+            font-weight: 200;
             margin: 0.5rem 1rem 0;
             padding: 0;
-            font-family: "Josefin Sans", cursive;
+            font-family: "Anton";
+            letter-spacing: 0.15rem;
             line-height: 30px;
             color: white;
           }
@@ -72,13 +76,13 @@ const RoadMapContainer = styled.section`
         top: 0;
         height: 2100px;
         width: 4px;
-        background: white;
+        /* background: #b68843; */
         display: block;
         .circle {
           height: 30px;
           width: 30px;
           border-radius: 50%;
-          background: orange;
+          background: #fffd6a;
           position: absolute;
           left: -13px;
           &.one {
@@ -123,7 +127,7 @@ const RoadMapContainer = styled.section`
   @media screen and (max-width: 1000px) {
     height: 2700px;
   }
-  `;
+`;
 
 interface IEachRoadMap {
   data: IPictures;
@@ -152,10 +156,12 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
       </div>
       <motion.div
         whileHover={{
-          scale: 1.1
+          scale: 1.1,
+          rotate: 1,
+          // backgroundColor: "red"
         }}
         transition={{
-          duration: 0.2
+          duration: 0.4,
         }}
       >
         <div className={`discourseContent ${props.data.picture_url}`}>
@@ -170,9 +176,32 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
   );
 };
 
+interface IEachCircle {
+  data: string;
+}
+const EachCircle: React.FC<IEachCircle> = (props) => {
+  let refEachCircle = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(refEachCircle.current!, {
+      y: 100,
+      opacity: 0.5,
+      scale: 0.5,
+      delay: 0.1,
+      duration: 0.4,
+      scrollTrigger: {
+        trigger: refEachCircle.current!,
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+  return <div ref={refEachCircle} className={`circle ${props.data}`} />;
+};
 interface IRoadMap {
   data: IContainer;
 }
+
+const circles = ["one", "two", "three", "four", "five", "six"];
 
 const RoadMap: React.FC<IRoadMap> = (props) => {
   return (
@@ -184,12 +213,9 @@ const RoadMap: React.FC<IRoadMap> = (props) => {
             <EachRoadMap data={value} />
           ))}
           <div className="middleLine">
-            <div className="circle one" />
-            <div className="circle two" />
-            <div className="circle three" />
-            <div className="circle four" />
-            <div className="circle five" />
-            <div className="circle six" />
+            {circles.map((value: string) => (
+              <EachCircle data={value} />
+            ))}
           </div>
         </article>
       </div>
