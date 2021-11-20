@@ -25,13 +25,14 @@ const TitleComponent = styled.div<IDivComponent>`
   -ms-user-select: none;
   user-select: none;
   flex-direction: column;
+  font-family: "Anton";
+
 
   h1 {
     font-size: 4.5rem;
     color: ${(props) => props.color};
     text-align: center;
     font-weight: 600;
-    font-family: "Anton";
     transition: transform 250ms;
   }
 

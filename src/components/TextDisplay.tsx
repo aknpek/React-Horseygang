@@ -18,11 +18,12 @@ const TextBlock = styled.div<ITextDisplay>`
   flex-direction: column;
   justify-content: center;
   z-index: 3;
+  font-family: "Anton", normal;
+  letter-spacing: 0.15rem;
 
   .sloganDiv {
     will-change: transform;
     transition: transform 450ms;
-    font-family: "Fredoka One", normal;
     font-weight: 200;
 
     text-align: center;
@@ -53,7 +54,6 @@ const TextBlock = styled.div<ITextDisplay>`
     }
   }
   .messageDiv {
-    font-family: "Josefin Sans", cursive;
     display: flex;
     justify-content: ${(props) => (props.preSale ? "center" : "left")};
     align-items: center;
@@ -74,7 +74,6 @@ const TextBlock = styled.div<ITextDisplay>`
       flex-direction: row;
       justify-content: space-around;
       .preSale {
-        font-family: "Fredoka One", normal;
         display: flex;
         height: 4rem;
         width: 15rem;
@@ -89,7 +88,6 @@ const TextBlock = styled.div<ITextDisplay>`
         text-align: center;
       }
       .preSaleEth {
-        font-family: "Fredoka One", normal;
         color: white;
         border: 1.5px solid #AFE1F0;
         font-weight: 200;
@@ -107,8 +105,6 @@ const TextBlock = styled.div<ITextDisplay>`
     text-align: center;
     margin-top: 1rem;
     width: 50%;
-
-    font-family: "Fredoka One", normal;
     letter-spacing: 0.3rem;
     border-radius: 2rem;
     border-radius: 1rem;
@@ -138,10 +134,9 @@ const TextBlock = styled.div<ITextDisplay>`
       text-align: center;
       margin-top: 1rem;
       width: 55%;
-      font-family: "Fredoka One", normal;
       border-radius: 2rem;
       border-radius: 1rem;
-      background-color: #ff961b;
+      background-color: #321bff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -163,7 +158,8 @@ const TextBlock = styled.div<ITextDisplay>`
       text-align: center;
       margin-top: 1rem;
       width: 35%;
-      font-family: "Fredoka One", normal;
+      
+      font-family: "Anton", normal;
 
       border-radius: 2rem;
       border-radius: 1rem;
@@ -193,7 +189,9 @@ const TextBlock = styled.div<ITextDisplay>`
       }
     }
     .messageDiv {
-      font-family: "Josefin Sans", cursive;
+      /* font-family: "Josefin Sans", cursive; */
+      
+      font-family: "Anton", normal;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -377,7 +375,6 @@ const TextBlock = styled.div<ITextDisplay>`
         flex-direction: row;
         justify-content: space-around;
         .preSale {
-          font-family: "Fredoka One", normal;
           display: flex;
           height: 3rem;
           width: 10rem;
@@ -393,7 +390,6 @@ const TextBlock = styled.div<ITextDisplay>`
           text-align: center;
         }
         .preSaleEth {
-          font-family: "Fredoka One", normal;
           color: white;
           border: 1.5px solid #AFE1F0;
           font-weight: 200;
@@ -443,7 +439,6 @@ const TextBlock = styled.div<ITextDisplay>`
         margin-top: 1rem;
         width: 35%;
         height: 3.5rem;
-        font-family: "Josefin Sans", cursive;
         border-radius: 2rem;
         border-radius: 1rem;
         background-color: white;
@@ -507,7 +502,6 @@ const TextBlock = styled.div<ITextDisplay>`
         flex-direction: row;
         justify-content: space-around;
         .preSale {
-          font-family: "Fredoka One", normal;
           display: flex;
           height: 3rem;
           width: 6rem;
@@ -523,7 +517,6 @@ const TextBlock = styled.div<ITextDisplay>`
           text-align: center;
         }
         .preSaleEth {
-          font-family: "Fredoka One", normal;
           color: white;
           border: 1.5px solid #AFE1F0;
           font-weight: 200;
@@ -561,7 +554,6 @@ const TextBlock = styled.div<ITextDisplay>`
         text-align: center;
         width: 55%;
         height: 3.5rem;
-        font-family: "Josefin Sans", cursive;
         border-radius: 2rem;
         border-radius: 1rem;
         background-color: #ff961b;
@@ -586,7 +578,6 @@ const TextBlock = styled.div<ITextDisplay>`
         text-align: center;
         width: 35%;
         height: 3.5rem;
-        font-family: "Josefin Sans", cursive;
         border-radius: 2rem;
         border-radius: 1rem;
         background-color: white;
@@ -645,7 +636,6 @@ const TextBlock = styled.div<ITextDisplay>`
         flex-direction: row;
         justify-content: space-around;
         .preSale {
-          font-family: "Fredoka One", normal;
           display: flex;
           height: 3rem;
           width: 6rem;
@@ -661,7 +651,6 @@ const TextBlock = styled.div<ITextDisplay>`
           text-align: center;
         }
         .preSaleEth {
-          font-family: "Fredoka One", normal;
           color: white;
           border: 1.5px solid #AFE1F0;
           font-weight: 200;
@@ -722,7 +711,6 @@ const TextBlock = styled.div<ITextDisplay>`
         text-align: center;
         width: 35%;
         height: 3.5rem;
-        font-family: "Josefin Sans", cursive;
         border-radius: 2rem;
         border-radius: 1rem;
         background-color: white;

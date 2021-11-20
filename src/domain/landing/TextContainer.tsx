@@ -15,7 +15,6 @@ export const TextMain = styled.section`
     max-width: 50%;
     margin: auto;
     h1 {
-      font-family: "Fredoka One", normal;
       font-weight: 400;
       font-size: 4.5rem;
     }

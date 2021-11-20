@@ -278,16 +278,16 @@
         "pictures": [
           {
             "id": 0,
-            "picture_url": "egemen",
-            "title": "Egemen",
+            "picture_url": "deniz",
+            "title": "Deniz",
             "subtitle": "Project Manager",
             "hyperlink": "https://twitter.com/DropNFTArt",
             "description": ""
           },
           {
             "id": 1,
-            "picture_url": "elif",
-            "title": "Elif",
+            "picture_url": "gizem",
+            "title": "Gizem",
             "subtitle": "Designer",
             "hyperlink": "https://twitter.com/DesignofNFT",
             "description": ""
@@ -302,8 +302,8 @@
           },
           {
             "id": 3,
-            "picture_url": "burak",
-            "title": "Burak",
+            "picture_url": "akinu",
+            "title": "Akin.U",
             "subtitle": "Social Media",
             "hyperlink": "https://twitter.com/BaldPromotion",
             "description": ""

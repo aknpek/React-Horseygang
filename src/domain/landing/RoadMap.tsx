@@ -4,6 +4,7 @@ import { IContainer, IPictures } from "../../types";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
+import Titles from "../../components/Titles";
 
 const RoadMapContainer = styled.section`
   height: 2100px;
@@ -13,7 +14,6 @@ const RoadMapContainer = styled.section`
       font-family: "Anton";
       font-weight: 200;
       font-size: 35px;
-
     }
     h1 {
       text-align: center;
@@ -126,6 +126,15 @@ const RoadMapContainer = styled.section`
 
   @media screen and (max-width: 1000px) {
     height: 2700px;
+    .container {
+      .roadmapWrapper {
+        .discourse {
+          .textContext {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -206,8 +215,15 @@ const circles = ["one", "two", "three", "four", "five", "six"];
 const RoadMap: React.FC<IRoadMap> = (props) => {
   return (
     <RoadMapContainer>
+        <Titles
+          {...{
+            data: { title: "Road Map", subtitle: "" },
+            color: "white",
+            colorSub: "white",
+          }}
+        />
+
       <div className="container">
-        <h1>Road Map</h1>
         <article className="roadmapWrapper">
           {props.data.pictures.map((value: IPictures) => (
             <EachRoadMap data={value} />

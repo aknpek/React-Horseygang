@@ -44,9 +44,9 @@
 }
 
 .collection {
-  background-image: url("./../assets/images/space.png");
-  background-size: cover;
-  height: 250vh;
+  /* background-image: url("./../assets/images/space.png"); */
+  /* background-size: cover; */
+  /* height: 250vh; */
 }
 .faq {
   margin-top: 10vh;
