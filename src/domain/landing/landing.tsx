@@ -16,6 +16,7 @@ import Leaf from "../../components/Leaf";
 import { Faq } from "./Faq";
 import TextContainer from "./TextContainer";
 import Pictures from "../../components/Locals";
+import RarePhoto from "./RarePhoto";
 
 const getDocHeight = () => {
   return Math.max(
@@ -121,9 +122,9 @@ const Landing: React.FC = () => {
           ></ThirdContainer>
           .
           <TextContainer data={data["landing"]["containers"][1]} />
-          <div className="rareContainer">
-            <img id="imageRare" src={Pictures["rare"].default} alt="rare"></img>
-          </div>
+         
+          <RarePhoto />
+
         </div>
         <div>
           <RoadMap data={data["landing"]["containers"][9]} />

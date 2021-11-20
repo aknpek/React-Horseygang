@@ -17,6 +17,7 @@ interface IHead {
 const HeaderCo = styled.div<IHead>`
   margin-top: -1rem;
   z-index: 20;
+  font-family: "Anton";
 
   background-color: #121420;
   display: flex;
@@ -42,8 +43,8 @@ const HeaderCo = styled.div<IHead>`
 
     span {
       display: flex;
-      font-family: "Fredoka One", normal;
-      letter-spacing: 0.05rem;
+      /* font-family: "Fredoka One", normal; */
+      letter-spacing: .25rem;
       font-weight: 400;
       color: ${(props) => (props.showThirdContainer ? "white" : "#cecad3")};
       h1 {
@@ -69,7 +70,6 @@ const HeaderCo = styled.div<IHead>`
   .walletContainer {
     span {
       display: flex;
-      font-family: "Fredoka One", normal;
       letter-spacing: 0.05rem;
       font-weight: 400;
       color: ${(props) => (props.showThirdContainer ? "white" : "#cecad3")};
@@ -181,7 +181,7 @@ const HeaderCo = styled.div<IHead>`
   .dropDownWallet {
     position: relative;
     display: inline-block;
-    font-family: "Fredoka One", normal;
+    /* font-family: "Fredoka One", normal; */
   }
 
   .dropDownWallet:hover .dropDownContent {
@@ -233,7 +233,7 @@ const HeaderCo = styled.div<IHead>`
     .walletContainer {
       span {
         display: flex;
-        font-family: "Fredoka One", normal;
+        /* font-family: "Fredoka One", normal; */
         letter-spacing: 0.05rem;
         font-weight: 400;
         color: ${(props) => (props.showThirdContainer ? "white" : "#cecad3")};
@@ -311,7 +311,7 @@ const HeaderCo = styled.div<IHead>`
     .dropDownWallet {
       position: relative;
       display: inline-block;
-      font-family: "Fredoka One", normal;
+      /* font-family: "Fredoka One", normal; */
     }
 
     .dropDownWallet:hover .dropDownContent {
@@ -332,7 +332,7 @@ const HeaderCo = styled.div<IHead>`
     .walletContainer {
       span {
         display: flex;
-        font-family: "Fredoka One", normal;
+        /* font-family: "Fredoka One", normal; */
         letter-spacing: 0.05rem;
         font-weight: 400;
         color: ${(props) => (props.showThirdContainer ? "white" : "#cecad3")};
@@ -410,7 +410,7 @@ const HeaderCo = styled.div<IHead>`
     .dropDownWallet {
       position: relative;
       display: inline-block;
-      font-family: "Fredoka One", normal;
+      /* font-family: "Fredoka One", normal; */
     }
 
     .dropDownWallet:hover .dropDownContent {

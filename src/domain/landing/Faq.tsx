@@ -11,7 +11,7 @@ const FaqContainer = styled.div`
     font-family: "Anton";
     letter-spacing: 0.05rem;
 
-    color: #a7a7a7;
+    color: white;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -58,7 +58,7 @@ const FaqContainer = styled.div`
 
       &:hover {
         h1 {
-          color: #bbbbbb;
+          color: white;
           z-index: 20;
           font-size: 1.4rem;
           transition: 0.5s ease-out;
@@ -73,15 +73,6 @@ const FaqContainer = styled.div`
         }
       }
     }
-
-    /* .questionButton:hover {
-      background-color: #f8b279;
-      transition: linear 0.2s;
-      cursor: pointer;
-      color: #15131f;
-
-      font-family: "Anton";
-    } */
   }
 
   .accordionItem.active .button {
@@ -226,8 +217,8 @@ export const Faq: React.FC<IAccordion> = (props) => {
       gsap.from(titleRef.current!, {
         opacity: 0,
         scale: 0.8,
-        duration: 1,
-        x: -100,
+        duration: 0.5,
+        y: 50,
         delay: 0.3,
         scrollTrigger: {
           trigger: titleRef.current!,
@@ -242,7 +233,7 @@ export const Faq: React.FC<IAccordion> = (props) => {
       <div ref={titleRef}>
         <Titles
           colorSub={"#242424"}
-          color={"#f8b279"}
+          color={"white"}
           data={{ title: props.data.title, subtitle: "" }}
         />
       </div>

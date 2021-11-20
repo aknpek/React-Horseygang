@@ -189,8 +189,6 @@ const TextBlock = styled.div<ITextDisplay>`
       }
     }
     .messageDiv {
-      /* font-family: "Josefin Sans", cursive; */
-      
       font-family: "Anton", normal;
       display: flex;
       justify-content: center;
@@ -257,7 +255,6 @@ const TextBlock = styled.div<ITextDisplay>`
   }
   @media screen and (max-width: 1100px) {
     .sloganDiv {
-      /* background-color: red; */
       .cozyHomeLogoDiv {
         .cozyHomeLogoDiv2 {
           transform: scale(0.8);
@@ -413,10 +410,8 @@ const TextBlock = styled.div<ITextDisplay>`
         margin-top: 1rem;
         width: 55%;
         height: 3.5rem;
-        font-family: "Josefin Sans", cursive;
         border-radius: 2rem;
         border-radius: 1rem;
-        background-color: #ff961b;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -556,7 +551,6 @@ const TextBlock = styled.div<ITextDisplay>`
         height: 3.5rem;
         border-radius: 2rem;
         border-radius: 1rem;
-        background-color: #ff961b;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -686,10 +680,8 @@ const TextBlock = styled.div<ITextDisplay>`
         text-align: center;
         width: 55%;
         height: 3.5rem;
-        font-family: "Fredoka One", normal;
         border-radius: 2rem;
         border-radius: 1rem;
-        background-color: #ff961b;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -789,7 +781,7 @@ const TextDisplay: React.FC<PTextDisplay> = (props) => {
         <div className={"messageMiddleDiv"}>
           {props.title === "Presale" ? (
             <div className={"preSaleBlock"}>
-              <h1 className={"preSale"}>{eth.current} ETH</h1>
+              <h1 className={"preSale"}>{eth.current} SOL</h1>
               <h1 className={"preSaleEth"}>{leftMint.current} LEFT</h1>
             </div>
           ) : (

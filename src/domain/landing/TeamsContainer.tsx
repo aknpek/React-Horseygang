@@ -71,21 +71,19 @@ const SeventhComponent = styled.div<ISixthContainer>`
       }
 
       h3 {
-        color: #242424;
+        color: white;
         font-size: 2.5rem;
-        font-family: "Jost";
-        /* font-family: "Josefin Sans", cursive; */
+        font-family: "Anton";
+        letter-spacing: .2rem;
         font-weight: 600;
         cursor: default;
       }
       h4 {
-        color: #242424;
+        color: white;
         font-size: 1.2rem;
-        font-weight: 300;
-        /* font-family: "Josefin Sans", cursive; */
-        font-family: "Jost";
-
-        margin-top: -1rem;
+        font-weight: 200;
+        font-family: "Anton";
+        margin-top: 1rem;
         cursor: default;
       }
     }
@@ -101,11 +99,9 @@ const SeventhComponent = styled.div<ISixthContainer>`
     align-items: center;
     a {
       h1 {
-        color: #f9b279;
-        /* font-family: "Josefin Sans", cursive; */
-        font-family: "Jost";
-
-        font-weight: 600;
+        color: white;
+        font-family: "Anton";
+        font-weight: 200;
         text-decoration: underline;
         cursor: default;
       }
@@ -422,8 +418,8 @@ const TeamsContainer: React.FC<PropsSeven> = (props) => {
     gsap.from(titleRef.current!, {
       opacity: 0.1,
       scale: 0.8,
-      duration: 2,
-      x: -100,
+      duration: 0.5,
+      y: 50,
       delay: 0.5,
       scrollTrigger: {
         trigger: titleRef.current!,
@@ -435,7 +431,7 @@ const TeamsContainer: React.FC<PropsSeven> = (props) => {
     <SeventhComponent className="Seven-Component">
       <div ref={titleRef} className={"titleTeam"}>
         <Titles
-          color={"#f8b279"}
+          color={"white"}
           colorSub={"#242424"}
           data={{ title: props.data.title, subtitle: props.data.subtitle }}
         />

@@ -119,9 +119,9 @@ const ThirdComponent = styled.div<IThirdContainer>`
   }
 
   @media screen and (max-width: 1000px) {
-    height: 1200px;
+    height: 1350px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: .5fr 1.5fr 1.5fr 1.5fr;
     .cell-1 {
       grid-row: 1/1;
       grid-column: 1/4;
@@ -274,7 +274,7 @@ const EachImage: React.FC<IEachContainer> = (props) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.from(refEachImage.current!, {
-      y: 100 * props.value.id,
+      y: 50 * props.value.id,
       opacity: 0.1,
       scale: 0.5,
       delay: 0.1,

@@ -123,9 +123,11 @@ const RoadMapContainer = styled.section`
       }
     }
   }
-
+  @media screen and (max-width: 1500px) {
+    height: 2400px;
+  }
   @media screen and (max-width: 1000px) {
-    height: 2700px;
+    height: 2900px;
     .container {
       .roadmapWrapper {
         .discourse {
