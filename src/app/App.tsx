@@ -2,7 +2,6 @@ import "./App.css";
 import Web3 from "web3";
 import { Web3ReactProvider } from "@web3-react/core";
 import Landing from "../domain/landing/landing";
-import Waiting from "../components/Waiting";
 import { Route, Switch } from "react-router";
 import { AnimatePresence } from "framer-motion";
 function getLibrary(provider: any) {
@@ -16,8 +15,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <div className="MainApp">
           <Switch>
-            <Route path="/" component={Waiting} exact />
-            <Route path="/enter" component={Landing} />
+            <Route path="/" component={Landing} exact />
           </Switch>
         </div>
       </AnimatePresence>

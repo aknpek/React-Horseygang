@@ -112,6 +112,9 @@ const RoadMapContainer = styled.section`
         .discourse {
           display: flex;
           flex-direction: column;
+          .textContext {
+            margin-bottom: 15vw;
+          }
           .discourseContent {
             width: 100%;
           }
@@ -127,7 +130,7 @@ const RoadMapContainer = styled.section`
     height: 2400px;
   }
   @media screen and (max-width: 1000px) {
-    height: 2900px;
+    height: 3700px;
     .container {
       .roadmapWrapper {
         .discourse {
@@ -174,14 +177,12 @@ const EachRoadMap: React.FC<IEachRoadMap> = (props) => {
         transition={{
           duration: 0.4,
         }}
-      >
-        <div className={`discourseContent ${props.data.picture_url}`}>
-          <ul>
-            {props.data.content?.map((value: string) => {
-              return <li>{value}</li>;
-            })}
-          </ul>
-        </div>
+        className={`discourseContent ${props.data.picture_url}`}>
+        <ul>
+          {props.data.content?.map((value: string) => {
+            return <li>{value}</li>;
+          })}
+        </ul>
       </motion.div>
     </div>
   );
@@ -217,13 +218,13 @@ const circles = ["one", "two", "three", "four", "five", "six"];
 const RoadMap: React.FC<IRoadMap> = (props) => {
   return (
     <RoadMapContainer>
-        <Titles
-          {...{
-            data: { title: "Road Map", subtitle: "" },
-            color: "white",
-            colorSub: "white",
-          }}
-        />
+      <Titles
+        {...{
+          data: { title: "Road Map", subtitle: "" },
+          color: "white",
+          colorSub: "white",
+        }}
+      />
 
       <div className="container">
         <article className="roadmapWrapper">
