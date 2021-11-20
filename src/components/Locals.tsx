@@ -9,12 +9,10 @@ const Pictures: any = {
 
   rare: require("../data/png/rare.png"),
   presale: require("../data/png/presale.png"),
-
   gizem: require("../data/png/Gizem.png"),
   deniz: require("../data/png/Deniz.png"),
   akin: require("../data/png/AkinIpek.png"),
   akinu: require("../data/png/AkinUman.png"),
-  gif: require("../data/png/logo.gif"),
 
   enterence_gif: require("../data/gif/mainpage.gif"),
 };

@@ -19,9 +19,6 @@
   height: 1080px;
 }
 
-.Home-Container {
-  /* animation: 1.5s ease-out 0s 1 slideInFromRight; */
-}
 .Fourth-Container {
   height: calc(65rem + 20px);
   animation: 1.5s ease-out 0s 1 slideInFromRight;
@@ -41,11 +38,6 @@
   background-size: contain;
 }
 
-.collection {
-  /* background-image: url("./../assets/images/space.png"); */
-  /* background-size: cover; */
-  /* height: 250vh; */
-}
 .faq {
   margin-top: 10vh;
 }

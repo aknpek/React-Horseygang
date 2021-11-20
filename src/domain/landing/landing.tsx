@@ -2,7 +2,6 @@ import GeneralWrapper, { FirstContainer, FirstWrapper } from "./Elements";
 import { IContent, IHeader } from "../../types";
 import React, { useEffect, useRef, useState } from "react";
 
-import FifthContainer from "./RarityContainer";
 import Header from "../../components/Header";
 import SecondContainer from "./EnterenceDescription";
 import ThirdContainer from "./Collections";
@@ -10,13 +9,11 @@ import TeamsContainer from "./TeamsContainer";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RoadMap from "./RoadMap";
-import Reflect from "../../svgs/Reflect";
 import { EnterenceContainer } from "./EnterenceContainer";
-import Leaf from "../../components/Leaf";
 import { Faq } from "./Faq";
 import TextContainer from "./TextContainer";
-import Pictures from "../../components/Locals";
 import RarePhoto from "./RarePhoto";
+import { Helmet } from "react-helmet";
 
 const getDocHeight = () => {
   return Math.max(
@@ -90,6 +87,10 @@ const Landing: React.FC = () => {
 
   return (
     <GeneralWrapper>
+      <Helmet>
+        <title>Horsey Gang</title>
+        <meta name="description" content="Horsey Gang" />
+      </Helmet>
       <FirstWrapper>
         <FirstContainer>
           <Header {...header_data} showThirdContainer={showThirdContainer} />
@@ -122,7 +123,7 @@ const Landing: React.FC = () => {
           ></ThirdContainer>
           .
           <TextContainer data={data["landing"]["containers"][1]} />
-         
+
           <RarePhoto />
 
         </div>
