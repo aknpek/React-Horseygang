@@ -29,7 +29,6 @@ const ThirdComponent = styled.div<IThirdContainer>`
       background-color: transparent;
       font-weight: 200;
       color: white;
-      font-family: "Fredoka One", normal;
     }
   }
   .cells {

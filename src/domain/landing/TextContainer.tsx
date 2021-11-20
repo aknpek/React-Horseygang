@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import Titles from "../../components/Titles";
 import { IContainer, ISlogan } from "../../types";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export const TextMain = styled.section`
   font-family: "Anton";
@@ -31,6 +34,27 @@ interface IProps {
   data: IContainer;
 }
 
+const EachText: React.FC<ISlogan> = (props) => {
+  let refEachText = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(refEachText.current!, {
+      y: 50,
+      opacity: 0.1,
+      scale: 0.5,
+      delay: 0.1,
+      duration: 0.2,
+      scrollTrigger: {
+        trigger: refEachText.current!,
+        toggleActions: "play none none reverse",
+      },
+    });
+  });
+
+  return <p ref={refEachText}>{props.slogan}</p>;
+};
+
 const TextContainer: React.FC<IProps> = ({ data }) => {
   return (
     <TextMain>
@@ -46,7 +70,7 @@ const TextContainer: React.FC<IProps> = ({ data }) => {
         </div>
         <div>
           {data.slogan.map((value: ISlogan) => (
-            <p>{value.slogan}</p>
+            <EachText {...value} />
           ))}
         </div>
       </div>
